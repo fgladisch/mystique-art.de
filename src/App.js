@@ -15,7 +15,7 @@ import {
 
 import Slides from "./components/Slides";
 import Grid from "./components/Grid/Grid";
-import Price from "./components/Price";
+import Offer from "./components/Offer";
 import Headline from "./components/Headline";
 
 import imageTatjana from './images/tatjana.jpg';
@@ -86,37 +86,32 @@ class App extends Component {
 
           <div className="w-75 mx-auto mb-5">
 
-            <h5>PORTRAITFOTOGRAFIE</h5>
-
-            <Price
+            <Offer
+              title="PORTRAITFOTOGRAFIE"
               price="100,-"
               text="Komme zu mir und ich fotografiere dich in meinem Home Fotostudio. Anschließend bekommst du von mir 15 Bilder n digitaler Form und ein leicht bearbeitetes Bild."
             />
 
-            <h5>PORTRAITFOTOGRAFIE MIT MAKE-UP</h5>
-
-            <Price
+            <Offer
+              title="PORTRAITFOTOGRAFIE MIT MAKE-UP"
               price="200,-"
               text="Komme in deinem eigenen Outfit und ich verpasse dir ein passendes Make-Up. Anschließend erhälst du 20 Bilddateien und zwei bearbeitete Bilder."
             />
 
-            <h5>FANTASYSHOOTING</h5>
-
-            <Price
+            <Offer
+              title="FANTASYSHOOTING"
               price="300,-"
               text="Dieses Fotoschooting beinhaltet ein von mir selbst erstelltes Outfit. Thema und Outfit sind von dir frei wählbar. Oder du kannst dich auch von mir überraschen lassen. Ich schminke dich und fotografiere dich in meinem Home Fotostudio oder draußen. Anschließend bekommst du 25 Bilddateien + 3 bearbeitete Bilder von mir."
             />
 
-            <h5>SPEZIALSHOOTING</h5>
-
-            <Price
+            <Offer
+              title="SPEZIALSHOOTING"
               price="400,-"
               text="Für 400,- kannst du dir ein Wunschoutfit von mir anfertigen lassen und bekommst dann die gleichen Konditionen wie bei dem Fantasyshooting."
             />
 
-            <h5>BILDBEARBEITUNG</h5>
-
-            <Price
+            <Offer
+              title="BILDBEARBEITUNG"
               price="30,-"
               text="Schicke mir ein Bild und ich bearbeite es für dich oder lass dir Bilder aus unseren gemeinsamen Shootings bearbeiten."
             />
