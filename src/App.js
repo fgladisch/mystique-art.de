@@ -17,7 +17,9 @@ import Slides from "./components/Slides";
 import Grid from "./components/Grid/Grid";
 import Offer from "./components/Offer";
 import Headline from "./components/Headline";
+import Line from "./components/Line/Line";
 
+import imageLogo from "./images/logo.png";
 import imageTatjana from './images/tatjana.jpg';
 
 class App extends Component {
@@ -43,10 +45,12 @@ class App extends Component {
 
         <Navbar color="dark" fixed="top" dark expand="md">
           <Container>
-            <NavbarBrand href="/">Mystique Art</NavbarBrand>
+            <NavbarBrand href="/">
+              <Media object src={imageLogo} alt="Logo" />
+            </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav navbar>
+              <Nav navbar className="mr-auto">
                 <NavItem>
                   <NavLink href="#gallery">Galerie</NavLink>
                 </NavItem>
@@ -63,6 +67,20 @@ class App extends Component {
                   <NavLink href="#legal">Impressum</NavLink>
                 </NavItem>
               </Nav>
+              <Nav navbar className="mr-auto">
+                <NavItem>
+                  <NavLink href="https://www.facebook.com/MystiqueArtPhotography">
+                    <i className="fab fa-facebook"></i>
+                    <span className="ml-2 d-inline d-md-none align-middle">Facebook</span>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="https://www.instagram.com/mystique.art.photography">
+                    <i className="fab fa-instagram"></i>
+                    <span className="ml-2 d-inline d-md-none align-middle">Instagram</span>
+                  </NavLink>
+                </NavItem>
+              </Nav>
             </Collapse>
           </Container>
         </Navbar>
@@ -74,11 +92,15 @@ class App extends Component {
           <p className="lead text-center mb-5">
             Lass dich in fantasievolle Gestalten wie Feen, Prinzessinnen, Göttinnen & dunkle Wesen verwandeln und halte diesen Moment für alle Ewigkeit fest. Wer möchte nicht mal einen Tag dem stressigen Alltag entfliehen und stattdessen in eine Fantasiewelt entfliehen, in der alles Möglich ist. Von ganz normalen Portraitaufnahmen bis hin zu aufwendigen Fantasyshootings ist alles Möglich. Auch an Veranstaltungen und Hochzeiten mache ich gerne Aufnahmen von eurem Tag. Ich freue mich auch euch...</p>
 
+          <Line />
+
           <Headline>
             <a name="gallery">Gallerie</a>
           </Headline>
 
           <Grid />
+
+          <Line />
 
           <Headline>
             <a name="prices">Preise</a>
@@ -118,6 +140,8 @@ class App extends Component {
 
           </div>
 
+          <Line />
+
           <Headline>
             <a name="aboutme">Über Mich</a>
           </Headline>
@@ -135,6 +159,8 @@ class App extends Component {
             </Row>
 
           </div>
+
+          <Line />
 
           <Headline>
             <a name="contact">Kontakt</a>
@@ -158,11 +184,13 @@ class App extends Component {
 
           </div>
 
-          <Headline>
-            <a name="legal">Datenschutzerklärung</a>
-          </Headline>
+          <Line />
 
           <div className="mb-5">
+
+            <h4 className="text-center">
+              <a name="legal">Datenschutzerklärung</a>
+            </h4>
 
             <h5 className="text-center">Datenschutz</h5>
 
@@ -174,7 +202,7 @@ class App extends Component {
 
             <p>Sie können unsere Webseite ohne Angabe personenbezogener Daten besuchen. Soweit auf unseren Seiten personenbezogene Daten (wie Name, Anschrift oder E-Mail Adresse) erhoben werden, erfolgt dies, soweit möglich, auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Sofern zwischen Ihnen und uns ein Vertragsverhältnis begründet, inhaltlich ausgestaltet oder geändert werden soll oder Sie an uns eine Anfrage stellen, erheben und verwenden wir personenbezogene Daten von Ihnen, soweit dies zu diesen Zwecken erforderlich ist (Bestandsdaten). Wir erheben, verarbeiten und nutzen personenbezogene Daten soweit dies erforderlich ist, um Ihnen die Inanspruchnahme des Webangebots zu ermöglichen (Nutzungsdaten). Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für den geannten Zweck (Bearbeitung Ihrer Anfrage oder Abwicklung eines Vertrags) erforderlich ist. Hierbei werden steuer- und handelsrechtliche Aufbewahrungsfristen berücksichtigt. Auf Anordnung der zuständigen Stellen dürfen wir im Einzelfall Auskunft über diese Daten (Bestandsdaten) erteilen, soweit dies für Zwecke der Strafverfolgung, zur Gefahrenabwehr, zur Erfüllung der gesetzlichen Aufgaben der Verfassungsschutzbehörden oder des Militärischen Abschirmdienstes oder zur Durchsetzung der Rechte am geistigen Eigentum erforderlich ist.</p>
 
-            <Headline>Haftungsausschluss</Headline>
+            <h4 className="text-center">Haftungsausschluss</h4>
 
             <p>Als Dienstanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Dienstanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
 
