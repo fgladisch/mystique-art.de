@@ -67,7 +67,7 @@ class App extends Component {
                   <NavLink href="#legal">Impressum</NavLink>
                 </NavItem>
               </Nav>
-              <Nav navbar className="mr-auto">
+              <Nav navbar>
                 <NavItem>
                   <NavLink target="_blank" href="https://www.facebook.com/MystiqueArtPhotography">
                     <i className="fab fa-facebook d-md-none"></i>
