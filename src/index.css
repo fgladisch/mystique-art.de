@@ -6,9 +6,17 @@ body {
   padding-bottom: 32px;
   min-width: 300px;
   font-size: 18px;
-  padding-top: 76px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .bg-dark {
   background-color: rgb(60, 60, 60) !important;
+}
+
+a.anchor {
+  height: 0px;
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
 }

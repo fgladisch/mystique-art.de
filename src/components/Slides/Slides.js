@@ -6,10 +6,12 @@ import {
   CarouselIndicators
 } from 'reactstrap';
 
-import slideImage1 from '../images/slides/merle.jpg';
-import slideImage2 from '../images/slides/cira.jpg';
-import slideImage3 from '../images/slides/stina.jpg';
-import slideImage4 from '../images/slides/aliencira.jpg';
+import slideImage1 from '../../images/slides/merle.jpg';
+import slideImage2 from '../../images/slides/cira.jpg';
+import slideImage3 from '../../images/slides/stina.jpg';
+import slideImage4 from '../../images/slides/aliencira.jpg';
+
+import './Slides.css';
 
 const items = [
   {

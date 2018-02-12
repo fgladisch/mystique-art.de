@@ -13,7 +13,7 @@ import {
   Media
 } from 'reactstrap';
 
-import Slides from "./components/Slides";
+import Slides from "./components/Slides/Slides";
 import Grid from "./components/Grid/Grid";
 import Offer from "./components/Offer";
 import Headline from "./components/Headline";
@@ -69,14 +69,14 @@ class App extends Component {
               </Nav>
               <Nav navbar className="mr-auto">
                 <NavItem>
-                  <NavLink href="https://www.facebook.com/MystiqueArtPhotography">
+                  <NavLink target="_blank" href="https://www.facebook.com/MystiqueArtPhotography">
                     <i className="fab fa-facebook d-md-none"></i>
                     <i className="fab fa-2x fa-facebook d-xs-none d-sm-none d-md-inline"></i>
                     <span className="ml-2 d-md-none">Facebook</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://www.instagram.com/mystique.art.photography">
+                  <NavLink target="_blank" href="https://www.instagram.com/mystique.art.photography">
                     <i className="fab fa-instagram d-md-none"></i>
                     <i className="fab fa-2x fa-instagram d-xs-none d-sm-none d-md-inline"></i>
                     <span className="ml-2 d-md-none">Instagram</span>
@@ -87,7 +87,7 @@ class App extends Component {
           </Container>
         </Navbar>
 
-        <Slides className="navbar-buffer" />
+        <Slides />
 
         <Container>
 
@@ -96,17 +96,17 @@ class App extends Component {
 
           <Line />
 
-          <Headline>
-            <a name="gallery">Gallerie</a>
-          </Headline>
+          <a className="anchor" name="gallery">Gallerie</a>
+
+          <Headline>Gallerie</Headline>
 
           <Grid />
 
           <Line />
 
-          <Headline>
-            <a name="prices">Preise</a>
-          </Headline>
+          <a className="anchor" name="prices">Preise</a>
+
+          <Headline>Preise</Headline>
 
           <div className="w-75 mx-auto">
 
@@ -144,15 +144,15 @@ class App extends Component {
 
           <Line />
 
-          <Headline>
-            <a name="aboutme">Über Mich</a>
-          </Headline>
+          <a className="anchor" name="aboutme">Über Mich</a>
+
+          <Headline>Über Mich</Headline>
 
           <Row>
-            <Col xs="12" sm="6">
+            <Col xs="12" sm="12" md="6">
               <Media className="mb-3" object width="100%" src={imageTatjana} alt="Tatjana" />
             </Col>
-            <Col xs="12" sm="6">
+            <Col xs="12" sm="12" md="6">
               <p>
                 Hinter dem künstlernamen Mystique Art stehe ich, Tatjana. Ich habe eigentlich Informations- und Kommunikationsdesign studiert und danach ein paar Jahre als Grafikerin bei einem Kalenderverlag gearbeitet. Dort habe ich bereits gelernt Bildauswahlen zu machen, Fotos zu bearbeiten und die Kalender zu designen. Doch ich wollte unbedingt selbst so tolle Bilder erschaffen und das mit Menschen. Ich wollte Menschen etwas geben, was ich lange Zeit selbst nicht hatte: Selbstvertrauen und Selbstbewusstsein. Deshalb würde ich mich freuen auch dich zu verwandeln, um dir zu zeigen was in dir steckt.</p>
             </Col>
@@ -160,9 +160,9 @@ class App extends Component {
 
           <Line />
 
-          <Headline>
-            <a name="contact">Kontakt</a>
-          </Headline>
+          <a className="anchor" name="contact">Kontakt</a>
+
+          <Headline>Kontakt</Headline>
 
           <div className="text-center">
 
@@ -184,11 +184,9 @@ class App extends Component {
 
           <Line />
 
-          <h4 className="text-center">
-            <a name="legal">Datenschutzerklärung</a>
-          </h4>
+          <a className="anchor" name="legal">Datenschutzerklärung</a>
 
-          <h5 className="text-center">Datenschutz</h5>
+          <Headline>Datenschutz&shy;erklärung</Headline>
 
           <p>Nachfolgend möchten wir Sie über unsere Datenschutzerklärung informieren. Sie finden hier Informationen über die Erhebung und Verwendung persönlicher Daten bei der Nutzung unserer Webseite. Wir beachten dabei das für Deutschland geltende Datenschutzrecht. Sie können diese Erklärung jederzeit auf unserer Webseite abrufen.</p>
 
