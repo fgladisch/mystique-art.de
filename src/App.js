@@ -71,14 +71,14 @@ class App extends Component {
                 <NavItem>
                   <NavLink target="_blank" href="https://www.facebook.com/MystiqueArtPhotography">
                     <i className="fab fa-facebook d-md-none"></i>
-                    <i className="fab fa-2x fa-facebook d-xs-none d-sm-none d-md-inline"></i>
+                    <i className="fab fa-2x fa-facebook d-none d-sm-none d-md-inline"></i>
                     <span className="ml-2 d-md-none">Facebook</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink target="_blank" href="https://www.instagram.com/mystique.art.photography">
                     <i className="fab fa-instagram d-md-none"></i>
-                    <i className="fab fa-2x fa-instagram d-xs-none d-sm-none d-md-inline"></i>
+                    <i className="fab fa-2x fa-instagram d-none d-sm-none d-md-inline"></i>
                     <span className="ml-2 d-md-none">Instagram</span>
                   </NavLink>
                 </NavItem>
