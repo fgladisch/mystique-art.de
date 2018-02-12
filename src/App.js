@@ -108,39 +108,35 @@ class App extends Component {
 
           <Headline>Preise</Headline>
 
-          <div className="w-75 mx-auto">
+          <Offer
+            title="PORTRAITFOTOGRAFIE"
+            price="100,-"
+            text="Komme zu mir und ich fotografiere dich in meinem Home Fotostudio. Anschließend bekommst du von mir 15 Bilder n digitaler Form und ein leicht bearbeitetes Bild."
+          />
 
-            <Offer
-              title="PORTRAITFOTOGRAFIE"
-              price="100,-"
-              text="Komme zu mir und ich fotografiere dich in meinem Home Fotostudio. Anschließend bekommst du von mir 15 Bilder n digitaler Form und ein leicht bearbeitetes Bild."
-            />
+          <Offer
+            title="PORTRAITFOTOGRAFIE MIT MAKE-UP"
+            price="200,-"
+            text="Komme in deinem eigenen Outfit und ich verpasse dir ein passendes Make-Up. Anschließend erhälst du 20 Bilddateien und zwei bearbeitete Bilder."
+          />
 
-            <Offer
-              title="PORTRAITFOTOGRAFIE MIT MAKE-UP"
-              price="200,-"
-              text="Komme in deinem eigenen Outfit und ich verpasse dir ein passendes Make-Up. Anschließend erhälst du 20 Bilddateien und zwei bearbeitete Bilder."
-            />
+          <Offer
+            title="FANTASYSHOOTING"
+            price="300,-"
+            text="Dieses Fotoschooting beinhaltet ein von mir selbst erstelltes Outfit. Thema und Outfit sind von dir frei wählbar. Oder du kannst dich auch von mir überraschen lassen. Ich schminke dich und fotografiere dich in meinem Home Fotostudio oder draußen. Anschließend bekommst du 25 Bilddateien + 3 bearbeitete Bilder von mir."
+          />
 
-            <Offer
-              title="FANTASYSHOOTING"
-              price="300,-"
-              text="Dieses Fotoschooting beinhaltet ein von mir selbst erstelltes Outfit. Thema und Outfit sind von dir frei wählbar. Oder du kannst dich auch von mir überraschen lassen. Ich schminke dich und fotografiere dich in meinem Home Fotostudio oder draußen. Anschließend bekommst du 25 Bilddateien + 3 bearbeitete Bilder von mir."
-            />
+          <Offer
+            title="SPEZIALSHOOTING"
+            price="400,-"
+            text="Für 400,- kannst du dir ein Wunschoutfit von mir anfertigen lassen und bekommst dann die gleichen Konditionen wie bei dem Fantasyshooting."
+          />
 
-            <Offer
-              title="SPEZIALSHOOTING"
-              price="400,-"
-              text="Für 400,- kannst du dir ein Wunschoutfit von mir anfertigen lassen und bekommst dann die gleichen Konditionen wie bei dem Fantasyshooting."
-            />
-
-            <Offer
-              title="BILDBEARBEITUNG"
-              price="30,-"
-              text="Schicke mir ein Bild und ich bearbeite es für dich oder lass dir Bilder aus unseren gemeinsamen Shootings bearbeiten."
-            />
-
-          </div>
+          <Offer
+            title="BILDBEARBEITUNG"
+            price="30,-"
+            text="Schicke mir ein Bild und ich bearbeite es für dich oder lass dir Bilder aus unseren gemeinsamen Shootings bearbeiten."
+          />
 
           <Line />
 
