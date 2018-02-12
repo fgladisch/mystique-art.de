@@ -92,7 +92,7 @@ class App extends Component {
         <Container>
 
           <p className="lead text-center">
-            Lass dich in fantasievolle Gestalten wie Feen, Prinzessinnen, Göttinnen & dunkle Wesen verwandeln und halte diesen Moment für alle Ewigkeit fest. Wer möchte nicht mal einen Tag dem stressigen Alltag entfliehen und stattdessen in eine Fantasiewelt entfliehen, in der alles Möglich ist. Von ganz normalen Portraitaufnahmen bis hin zu aufwendigen Fantasyshootings ist alles Möglich. Auch an Veranstaltungen und Hochzeiten mache ich gerne Aufnahmen von eurem Tag. Ich freue mich auch euch...</p>
+            Lass dich in fantasievolle Gestalten wie Feen, Prinzessinnen, Göttinnen & dunkle Wesen verwandeln und halte diesen Moment für alle Ewigkeit fest. Wer möchte nicht mal einen Tag dem stressigen Alltag entfliehen und stattdessen in eine Fantasiewelt entfliehen, in der alles Möglich ist. Von ganz normalen Portraitaufnahmen bis hin zu aufwendigen Fantasyshootings ist alles Möglich. Auch an Veranstaltungen und Hochzeiten mache ich gerne Aufnahmen von eurem Tag. Ich freue mich auf euch...</p>
 
           <Line />
 
