@@ -1,0 +1,6 @@
+.Line {
+	margin: 25px 0;
+	height: 1px;
+	background: black;
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(rgb(60, 60, 60)), to(rgb(60, 60, 60)), color-stop(50%, #ddd));
+}
