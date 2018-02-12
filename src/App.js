@@ -70,14 +70,16 @@ class App extends Component {
               <Nav navbar className="mr-auto">
                 <NavItem>
                   <NavLink href="https://www.facebook.com/MystiqueArtPhotography">
-                    <i className="fab fa-facebook"></i>
-                    <span className="ml-2 d-inline d-md-none align-middle">Facebook</span>
+                    <i className="fab fa-facebook d-md-none"></i>
+                    <i className="fab fa-2x fa-facebook d-xs-none d-sm-none d-md-inline"></i>
+                    <span className="ml-2 d-md-none">Facebook</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="https://www.instagram.com/mystique.art.photography">
-                    <i className="fab fa-instagram"></i>
-                    <span className="ml-2 d-inline d-md-none align-middle">Instagram</span>
+                    <i className="fab fa-instagram d-md-none"></i>
+                    <i className="fab fa-2x fa-instagram d-xs-none d-sm-none d-md-inline"></i>
+                    <span className="ml-2 d-md-none">Instagram</span>
                   </NavLink>
                 </NavItem>
               </Nav>
@@ -89,7 +91,7 @@ class App extends Component {
 
         <Container>
 
-          <p className="lead text-center mb-5">
+          <p className="lead text-center">
             Lass dich in fantasievolle Gestalten wie Feen, Prinzessinnen, Göttinnen & dunkle Wesen verwandeln und halte diesen Moment für alle Ewigkeit fest. Wer möchte nicht mal einen Tag dem stressigen Alltag entfliehen und stattdessen in eine Fantasiewelt entfliehen, in der alles Möglich ist. Von ganz normalen Portraitaufnahmen bis hin zu aufwendigen Fantasyshootings ist alles Möglich. Auch an Veranstaltungen und Hochzeiten mache ich gerne Aufnahmen von eurem Tag. Ich freue mich auch euch...</p>
 
           <Line />
@@ -106,7 +108,7 @@ class App extends Component {
             <a name="prices">Preise</a>
           </Headline>
 
-          <div className="w-75 mx-auto mb-5">
+          <div className="w-75 mx-auto">
 
             <Offer
               title="PORTRAITFOTOGRAFIE"
@@ -146,19 +148,15 @@ class App extends Component {
             <a name="aboutme">Über Mich</a>
           </Headline>
 
-          <div className="mb-5">
-
-            <Row>
-              <Col xs="12" sm="6">
-                <Media className="mb-3" object width="100%" src={imageTatjana} alt="Tatjana" />
-              </Col>
-              <Col xs="12" sm="6">
-                <p>
-                  Hinter dem künstlernamen Mystique Art stehe ich, Tatjana. Ich habe eigentlich Informations- und Kommunikationsdesign studiert und danach ein paar Jahre als Grafikerin bei einem Kalenderverlag gearbeitet. Dort habe ich bereits gelernt Bildauswahlen zu machen, Fotos zu bearbeiten und die Kalender zu designen. Doch ich wollte unbedingt selbst so tolle Bilder erschaffen und das mit Menschen. Ich wollte Menschen etwas geben, was ich lange Zeit selbst nicht hatte: Selbstvertrauen und Selbstbewusstsein. Deshalb würde ich mich freuen auch dich zu verwandeln, um dir zu zeigen was in dir steckt.</p>
-              </Col>
-            </Row>
-
-          </div>
+          <Row>
+            <Col xs="12" sm="6">
+              <Media className="mb-3" object width="100%" src={imageTatjana} alt="Tatjana" />
+            </Col>
+            <Col xs="12" sm="6">
+              <p>
+                Hinter dem künstlernamen Mystique Art stehe ich, Tatjana. Ich habe eigentlich Informations- und Kommunikationsdesign studiert und danach ein paar Jahre als Grafikerin bei einem Kalenderverlag gearbeitet. Dort habe ich bereits gelernt Bildauswahlen zu machen, Fotos zu bearbeiten und die Kalender zu designen. Doch ich wollte unbedingt selbst so tolle Bilder erschaffen und das mit Menschen. Ich wollte Menschen etwas geben, was ich lange Zeit selbst nicht hatte: Selbstvertrauen und Selbstbewusstsein. Deshalb würde ich mich freuen auch dich zu verwandeln, um dir zu zeigen was in dir steckt.</p>
+            </Col>
+          </Row>
 
           <Line />
 
@@ -166,7 +164,7 @@ class App extends Component {
             <a name="contact">Kontakt</a>
           </Headline>
 
-          <div className="mb-5 text-center">
+          <div className="text-center">
 
             <p>Buchungsanfragen bitte an meine unten angegebene E-Mail Adresse oder über den Messenger meiner Facebook-Seite.</p>
 
@@ -186,33 +184,31 @@ class App extends Component {
 
           <Line />
 
-          <div className="mb-5">
+          <h4 className="text-center">
+            <a name="legal">Datenschutzerklärung</a>
+          </h4>
 
-            <h4 className="text-center">
-              <a name="legal">Datenschutzerklärung</a>
-            </h4>
+          <h5 className="text-center">Datenschutz</h5>
 
-            <h5 className="text-center">Datenschutz</h5>
+          <p>Nachfolgend möchten wir Sie über unsere Datenschutzerklärung informieren. Sie finden hier Informationen über die Erhebung und Verwendung persönlicher Daten bei der Nutzung unserer Webseite. Wir beachten dabei das für Deutschland geltende Datenschutzrecht. Sie können diese Erklärung jederzeit auf unserer Webseite abrufen.</p>
 
-            <p>Nachfolgend möchten wir Sie über unsere Datenschutzerklärung informieren. Sie finden hier Informationen über die Erhebung und Verwendung persönlicher Daten bei der Nutzung unserer Webseite. Wir beachten dabei das für Deutschland geltende Datenschutzrecht. Sie können diese Erklärung jederzeit auf unserer Webseite abrufen.</p>
+          <p>Wir weisen ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem Zugriff durch Dritte geschützt werden kann.</p>
 
-            <p>Wir weisen ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem Zugriff durch Dritte geschützt werden kann.</p>
+          <h5 className="text-center">Personenbezogene Daten</h5>
 
-            <h5 className="text-center">Personenbezogene Daten</h5>
+          <p>Sie können unsere Webseite ohne Angabe personenbezogener Daten besuchen. Soweit auf unseren Seiten personenbezogene Daten (wie Name, Anschrift oder E-Mail Adresse) erhoben werden, erfolgt dies, soweit möglich, auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Sofern zwischen Ihnen und uns ein Vertragsverhältnis begründet, inhaltlich ausgestaltet oder geändert werden soll oder Sie an uns eine Anfrage stellen, erheben und verwenden wir personenbezogene Daten von Ihnen, soweit dies zu diesen Zwecken erforderlich ist (Bestandsdaten). Wir erheben, verarbeiten und nutzen personenbezogene Daten soweit dies erforderlich ist, um Ihnen die Inanspruchnahme des Webangebots zu ermöglichen (Nutzungsdaten). Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für den geannten Zweck (Bearbeitung Ihrer Anfrage oder Abwicklung eines Vertrags) erforderlich ist. Hierbei werden steuer- und handelsrechtliche Aufbewahrungsfristen berücksichtigt. Auf Anordnung der zuständigen Stellen dürfen wir im Einzelfall Auskunft über diese Daten (Bestandsdaten) erteilen, soweit dies für Zwecke der Strafverfolgung, zur Gefahrenabwehr, zur Erfüllung der gesetzlichen Aufgaben der Verfassungsschutzbehörden oder des Militärischen Abschirmdienstes oder zur Durchsetzung der Rechte am geistigen Eigentum erforderlich ist.</p>
 
-            <p>Sie können unsere Webseite ohne Angabe personenbezogener Daten besuchen. Soweit auf unseren Seiten personenbezogene Daten (wie Name, Anschrift oder E-Mail Adresse) erhoben werden, erfolgt dies, soweit möglich, auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Sofern zwischen Ihnen und uns ein Vertragsverhältnis begründet, inhaltlich ausgestaltet oder geändert werden soll oder Sie an uns eine Anfrage stellen, erheben und verwenden wir personenbezogene Daten von Ihnen, soweit dies zu diesen Zwecken erforderlich ist (Bestandsdaten). Wir erheben, verarbeiten und nutzen personenbezogene Daten soweit dies erforderlich ist, um Ihnen die Inanspruchnahme des Webangebots zu ermöglichen (Nutzungsdaten). Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für den geannten Zweck (Bearbeitung Ihrer Anfrage oder Abwicklung eines Vertrags) erforderlich ist. Hierbei werden steuer- und handelsrechtliche Aufbewahrungsfristen berücksichtigt. Auf Anordnung der zuständigen Stellen dürfen wir im Einzelfall Auskunft über diese Daten (Bestandsdaten) erteilen, soweit dies für Zwecke der Strafverfolgung, zur Gefahrenabwehr, zur Erfüllung der gesetzlichen Aufgaben der Verfassungsschutzbehörden oder des Militärischen Abschirmdienstes oder zur Durchsetzung der Rechte am geistigen Eigentum erforderlich ist.</p>
+          <h4 className="text-center">Haftungsausschluss</h4>
 
-            <h4 className="text-center">Haftungsausschluss</h4>
+          <p>Als Dienstanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Dienstanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
 
-            <p>Als Dienstanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Dienstanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+          <h5 className="text-center">Urheberrecht</h5>
 
-            <h5 className="text-center">Urheberrecht</h5>
-
-            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
-
-          </div>
+          <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
 
         </Container>
+
+        <Line />
 
         <footer className="text-center">Copyright 2017 by Mystique Art</footer>
 

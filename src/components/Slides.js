@@ -88,7 +88,7 @@ class Slides extends Component {
         interval={5000}
         pause={false}
         ride="carousel"
-        className="mb-5 mt-5"
+        className="mb-5"
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
