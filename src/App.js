@@ -50,9 +50,11 @@ class App extends Component {
     return (
       <div>
 
+        <a className="anchor" name="top">Top</a>
+
         <Navbar color="dark" fixed="top" dark expand="md">
           <Container>
-            <NavbarBrand href="/">
+            <NavbarBrand href="#top">
               <Media object src={imageLogo} height="50" alt="Logo" />
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
@@ -153,9 +155,7 @@ class App extends Component {
 
           <a className="anchor" name="aboutme">Über Mich</a>
 
-          <div className="mb-3">
-            <Headline>Über Mich</Headline>
-          </div>
+          <Headline>Über Mich</Headline>
 
           <Row>
             <Col xs="12" sm="12" md="6">
