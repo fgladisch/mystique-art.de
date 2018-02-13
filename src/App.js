@@ -46,37 +46,41 @@ class App extends Component {
         <Navbar color="dark" fixed="top" dark expand="md">
           <Container>
             <NavbarBrand href="/">
-              <Media object src={imageLogo} alt="Logo" />
+              <Media object src={imageLogo} height="50" alt="Logo" />
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav navbar className="mr-auto">
                 <NavItem>
-                  <NavLink href="#gallery">Galerie</NavLink>
+                  <NavLink href="#gallery" onClick={this.toggle}>Galerie</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#prices">Preise</NavLink>
+                  <NavLink href="#prices" onClick={this.toggle}>Preise</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#aboutme">Über mich</NavLink>
+                  <NavLink href="#aboutme" onClick={this.toggle}>Über mich</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#contact">Kontakt</NavLink>
+                  <NavLink href="#contact" onClick={this.toggle}>Kontakt</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#legal">Impressum</NavLink>
+                  <NavLink href="#legal" onClick={this.toggle}>Impressum</NavLink>
                 </NavItem>
               </Nav>
               <Nav navbar>
                 <NavItem>
-                  <NavLink target="_blank" href="https://www.facebook.com/MystiqueArtPhotography">
+                  <NavLink target="_blank"
+                    onClick={this.toggle}
+                    href="https://www.facebook.com/MystiqueArtPhotography">
                     <i className="fab fa-facebook d-md-none"></i>
                     <i className="fab fa-2x fa-facebook d-none d-sm-none d-md-inline"></i>
                     <span className="ml-2 d-md-none">Facebook</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink target="_blank" href="https://www.instagram.com/mystique.art.photography">
+                  <NavLink target="_blank"
+                    onClick={this.toggle}
+                    href="https://www.instagram.com/mystique.art.photography">
                     <i className="fab fa-instagram d-md-none"></i>
                     <i className="fab fa-2x fa-instagram d-none d-sm-none d-md-inline"></i>
                     <span className="ml-2 d-md-none">Instagram</span>
@@ -142,7 +146,9 @@ class App extends Component {
 
           <a className="anchor" name="aboutme">Über Mich</a>
 
-          <Headline>Über Mich</Headline>
+          <div className="mb-3">
+            <Headline>Über Mich</Headline>
+          </div>
 
           <Row>
             <Col xs="12" sm="12" md="6">

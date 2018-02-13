@@ -16,6 +16,15 @@ body {
   background-color: rgb(60, 60, 60) !important;
 }
 
+a {
+  color: #29B6F6;
+}
+
+a:hover {
+  color: #039BE5;
+  text-decoration: none;
+}
+
 a.anchor {
   height: 0px;
   display: block;
