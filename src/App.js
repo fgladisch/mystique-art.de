@@ -13,6 +13,8 @@ import {
   Media
 } from 'reactstrap';
 
+import './App.css';
+
 import Slides from "./components/Slides/Slides";
 import Grid from "./components/Grid/Grid";
 import Offer from "./components/Offer";
@@ -29,7 +31,9 @@ class App extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.closeNavbar = this.closeNavbar.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
     this.state = {
+      navbarVisible: false,
       isOpen: false
     };
   }
@@ -46,12 +50,24 @@ class App extends Component {
     });
   }
 
-  render() {
-    return (
-      <div>
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
 
-        <a className="anchor" name="top">Top</a>
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 
+  handleScroll(event) {
+    const scrollTop = event.srcElement.documentElement.scrollTop;
+    console.log(scrollTop);
+    const navbarVisible = scrollTop > 150;
+    this.setState({ navbarVisible });
+  }
+
+  renderNavbar() {
+    if (this.state.navbarVisible) {
+      return (
         <Navbar color="dark" fixed="top" dark expand="md">
           <Container>
             <NavbarBrand href="#top">
@@ -99,10 +115,25 @@ class App extends Component {
             </Collapse>
           </Container>
         </Navbar>
+      );
+    }
+  }
 
-        <Slides />
+  render() {
+    return (
+      <div>
+
+        <a className="anchor" name="top">Top</a>
+
+        {this.renderNavbar()}
 
         <Container>
+
+          <Media object src={imageLogo} alt="Logo" className="logo-center" />
+
+          <Line />
+
+          <Slides />
 
           <p className="lead text-center">
             Lass dich in fantasievolle Gestalten wie Feen, Prinzessinnen, Göttinnen & dunkle Wesen verwandeln und halte diesen Moment für alle Ewigkeit fest. Wer möchte nicht mal einen Tag dem stressigen Alltag entfliehen und stattdessen in eine Fantasiewelt entfliehen, in der alles Möglich ist. Von ganz normalen Portraitaufnahmen bis hin zu aufwendigen Fantasyshootings ist alles Möglich. Auch an Veranstaltungen und Hochzeiten mache ich gerne Aufnahmen von eurem Tag. Ich freue mich auf euch...</p>
@@ -159,7 +190,7 @@ class App extends Component {
 
           <Row>
             <Col xs="12" sm="12" md="6">
-              <Media className="mb-3" object width="100%" src={imageTatjana} alt="Tatjana" />
+              <Media className="mb-3 shadow" object width="100%" src={imageTatjana} alt="Tatjana" />
             </Col>
             <Col xs="12" sm="12" md="6">
               <p>

@@ -79,7 +79,9 @@ class Slides extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img className="w-100" src={item.src} alt={item.altText} />
+          <div className="slides-container">
+            <img className="w-100" src={item.src} alt={item.altText} />
+          </div>
         </CarouselItem>
       );
     });
