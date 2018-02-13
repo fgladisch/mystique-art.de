@@ -28,6 +28,7 @@ class App extends Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
+    this.closeNavbar = this.closeNavbar.bind(this);
     this.state = {
       isOpen: false
     };
@@ -36,6 +37,12 @@ class App extends Component {
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
+    });
+  }
+
+  closeNavbar() {
+    this.setState({
+      isOpen: false
     });
   }
 
@@ -52,25 +59,25 @@ class App extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav navbar className="mr-auto">
                 <NavItem>
-                  <NavLink href="#gallery" onClick={this.toggle}>Galerie</NavLink>
+                  <NavLink href="#gallery" onClick={this.closeNavbar}>Galerie</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#prices" onClick={this.toggle}>Preise</NavLink>
+                  <NavLink href="#prices" onClick={this.closeNavbar}>Preise</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#aboutme" onClick={this.toggle}>Über mich</NavLink>
+                  <NavLink href="#aboutme" onClick={this.closeNavbar}>Über mich</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#contact" onClick={this.toggle}>Kontakt</NavLink>
+                  <NavLink href="#contact" onClick={this.closeNavbar}>Kontakt</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#legal" onClick={this.toggle}>Impressum</NavLink>
+                  <NavLink href="#legal" onClick={this.closeNavbar}>Impressum</NavLink>
                 </NavItem>
               </Nav>
               <Nav navbar>
                 <NavItem>
                   <NavLink target="_blank"
-                    onClick={this.toggle}
+                    onClick={this.closeNavbar}
                     href="https://www.facebook.com/MystiqueArtPhotography">
                     <i className="fab fa-facebook d-md-none"></i>
                     <i className="fab fa-2x fa-facebook d-none d-sm-none d-md-inline"></i>
@@ -79,7 +86,7 @@ class App extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink target="_blank"
-                    onClick={this.toggle}
+                    onClick={this.closeNavbar}
                     href="https://www.instagram.com/mystique.art.photography">
                     <i className="fab fa-instagram d-md-none"></i>
                     <i className="fab fa-2x fa-instagram d-none d-sm-none d-md-inline"></i>
