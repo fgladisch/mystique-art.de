@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import './Line.css';
+import "./Line.css";
 
-const Line = () => (
-  <div className="Line my-5"></div>
-)
+const Line = () => <div className="Line my-5" />;
 
 export default Line;
