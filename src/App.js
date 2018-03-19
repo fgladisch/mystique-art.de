@@ -149,14 +149,24 @@ class App extends Component {
 					<Slides />
 
 					<p className="lead text-center">
-						Lass dich in fantasievolle Gestalten wie Feen, Prinzessinnen,
-						Göttinnen & dunkle Wesen verwandeln und halte diesen Moment für alle
-						Ewigkeit fest. Wer möchte nicht mal einen Tag dem stressigen Alltag
-						entfliehen und stattdessen in eine Fantasiewelt entfliehen, in der
-						alles Möglich ist. Von ganz normalen Portraitaufnahmen bis hin zu
-						aufwendigen Fantasyshootings ist alles Möglich. Auch an
-						Veranstaltungen und Hochzeiten mache ich gerne Aufnahmen von eurem
-						Tag. Ich freue mich auf euch...
+						Du möchtest gerne mal für einen Tag dem ganzen Alltagsstress
+						entfliehen, alles weit hinter dir lassen und stattdessen in eine
+						Fantasiewelt entfliehen, in der alles Möglich ist? Du möchtest dich
+						verwandeln, in andere Rollen schlüpfen und sehen wie wandelbar du
+						bist?
+						<br />
+						<br />
+						Dann komm mich besuchen und lass dich von mir für einen Tag
+						verzaubern. Mit viel Kreativität und Liebe zum Detail erschaffe ich
+						mit dir zusammen Märchenwelten. Ich verwandel dich in fantasievolle
+						Gestalten wie Feen, Prinzessinnen, Göttinnen & dunkle Wesen und
+						halte diesen Moment für dich in einem Fotoshooting für alle Ewigkeit
+						fest.
+						<br />
+						<br />
+						Meine Motivation ist es dich auf eine kleine Reise mitzunehmen und
+						dir zu zeigen, was in dir steckt. Erlebe das Fotoshooting der
+						besonderen Art. Ich freue mich auf dich...
 					</p>
 
 					<Line />
@@ -177,35 +187,78 @@ class App extends Component {
 
 					<Headline>Preise</Headline>
 
-					<Offer
-						title="PORTRAITFOTOGRAFIE"
-						price="100,-"
-						text="Komme zu mir und ich fotografiere dich in meinem Home Fotostudio. Anschließend bekommst du von mir 15 Bilder n digitaler Form und ein leicht bearbeitetes Bild."
-					/>
+					<Offer title="COME AS YOU ARE" price="100,-">
+						<div>
+							Komme fertig geschminkt, gestylt und im eigenen Outfit zu mir und
+							ich fotografiere dich in meinem Home Fotostudio oder draußen an
+							einer nahe gelegenen Location. Anschließend bekommst du von mir 15
+							Bilder in digitaler Form und ein aufwändig bearbeitetes Bild.
+						</div>
+						<ul>
+							<li>ca. 30 Minuten Shooting</li>
+							<li>15 Auswahldateien</li>
+							<li>1 bearbeitetes Bild</li>
+						</ul>
+					</Offer>
 
-					<Offer
-						title="PORTRAITFOTOGRAFIE MIT MAKE-UP"
-						price="200,-"
-						text="Komme in deinem eigenen Outfit und ich verpasse dir ein passendes Make-Up. Anschließend erhälst du 20 Bilddateien und zwei bearbeitete Bilder."
-					/>
+					<Offer title="KLEINES SHOOTING MIT MAKE-UP UND STYLING" price="200,-">
+						<div>
+							Komme in deinem eigenen Outfit zu mir oder suche dir nach Abspra-
+							che eins in meinem Fundus aus und ich zaubere für dich ein zu dir
+							pas- sendes Make-Up. Anschließend fotografiere ich dich in meinem
+							Home Fotostudio, oder draußen an einer nahe gelegenen Location.
+							Anschlie- ßend bekommst du 20 Bilder in digitaler Form und zwei
+							aufwändig be- arbeitete Bilder.
+						</div>
+						<ul>
+							<li>ca. 1 Stunde Shooting</li>
+							<li>20 Auswahldateien</li>
+							<li>2 bearbeitete Bilder</li>
+						</ul>
+					</Offer>
 
-					<Offer
-						title="FANTASYSHOOTING"
-						price="300,-"
-						text="Dieses Fotoschooting beinhaltet ein von mir selbst erstelltes Outfit. Thema und Outfit sind von dir frei wählbar. Oder du kannst dich auch von mir überraschen lassen. Ich schminke dich und fotografiere dich in meinem Home Fotostudio oder draußen. Anschließend bekommst du 25 Bilddateien + 3 bearbeitete Bilder von mir."
-					/>
+					<Offer title="GROSSES FANTASYSHOOTING" price="300,-">
+						<div>
+							Suche dir ein Outfit aus meinem Fundus aus und ich zaubere für
+							dich ein aufwändiges Make-Up. Anschließend fotografiere ich dich
+							in mei- nem Home Fotostudio in zwei Sets, oder draußen an einer
+							schönen Location. Anschließend bekommst du 30 Bilder in digitaler
+							Form und drei aufwändig bearbeitete Bilder.
+						</div>
+						<ul>
+							<li>ca. 1,5 -2 Stunden Shooting</li>
+							<li>30 Auswahldateien</li>
+							<li>3 bearbeitete Bilder</li>
+						</ul>
+					</Offer>
 
-					<Offer
-						title="SPEZIALSHOOTING"
-						price="400,-"
-						text="Für 400,- kannst du dir ein Wunschoutfit von mir anfertigen lassen und bekommst dann die gleichen Konditionen wie bei dem Fantasyshooting."
-					/>
+					<Offer title="SPEZIALSHOOTING" price="400,-">
+						<div>
+							Lasse dir von mir für dein Shooting ein individuelles Wunschoutfit
+							an- fertigen oder suche dir zwei Outfits aus meinem Fundus aus und
+							ich zaubere für dich ein passendes aufwändiges Make-Up.
+							Anschließend fotografiere ich dich in meinem Home Fotostudio in
+							zwei Sets, oder draußen an einer schönen Location. Anschließend
+							bekommst du 40 Bilder in digitaler Form und 5 aufwändig
+							bearbeitete Bilder.
+						</div>
+						<ul>
+							<li>ca. 2-3 Stunden Shooting</li>
+							<li>40 Auswahldateien</li>
+							<li>5 bearbeitete Bilder</li>
+						</ul>
+					</Offer>
 
-					<Offer
-						title="BILDBEARBEITUNG"
-						price="30,-"
-						text="Schicke mir ein Bild und ich bearbeite es für dich oder lass dir Bilder aus unseren gemeinsamen Shootings bearbeiten."
-					/>
+					<Offer title="BILDBEARBEITUNG" price="30,-">
+						<div>
+							Wenn du weitere Bilder aus unserem gemeinsamen Shooting bearbei-
+							ten lassen möchtest, kannst du das für 30,- pro Bild nachträglich
+							bei mir buchen. Oder hast du vielleicht den Wunsch einem privaten
+							Bild von dir Magie zu verleihen? Oder dein Abschlussbild zu
+							verschönern? Dann Schicke mir ein Bild von dir und ich bearbeite
+							es für dich.
+						</div>
+					</Offer>
 
 					<Line />
 
@@ -227,16 +280,32 @@ class App extends Component {
 						</Col>
 						<Col xs="12" sm="12" md="6">
 							<p>
-								Hinter dem künstlernamen Mystique Art stehe ich, Tatjana. Ich
-								habe eigentlich Informations- und Kommunikationsdesign studiert
-								und danach ein paar Jahre als Grafikerin bei einem
-								Kalenderverlag gearbeitet. Dort habe ich bereits gelernt
-								Bildauswahlen zu machen, Fotos zu bearbeiten und die Kalender zu
-								designen. Doch ich wollte unbedingt selbst so tolle Bilder
-								erschaffen und das mit Menschen. Ich wollte Menschen etwas
-								geben, was ich lange Zeit selbst nicht hatte: Selbstvertrauen
-								und Selbstbewusstsein. Deshalb würde ich mich freuen auch dich
-								zu verwandeln, um dir zu zeigen was in dir steckt.
+								Hinter dem künstlernamen Mystique Art stehe ich, Tatjana,
+								Baujahr 1989. Aufgewachsen bin ich in einem kleinen Städt- chen
+								names Rheinberg. Kaum einer kennt diese Stadt, die zum Kreis
+								Wesel gehört. Ich bin nunmal ein richtiges Landei. Mittlerweile
+								leben mein Lebensgefährte und ich mit einer Katze in Duisburg.
+								Das Großstadtleben hat mich zu sich geholt.
+								<br />
+								<br />
+								Seit ich einen Stift in den Händen halten kann, habe ich die
+								Kreativität in mir losgelassen und gezeichnet, gebastelt und mir
+								für meine Kuscheltiere Fantasiewelten ausgedacht. Als ich Älter
+								wurde lebte ich mich an Karneval und Halloween voll aus und
+								erschuf immer ausgefallenere Kostüme. Lange Zeit war das alles
+								jedoch nur ein Hobby. Nachdem ich eine Ausbildung zur
+								Bürokauffrau gemacht hatte, studierte ich Informations- und
+								Kommunikationsdesign, um dem kreativen Arbeiten näher zu kommen.
+								Danach arbeitete ich ein paar Jahre als Grafikerin in einem
+								Kalenderverlag. Dort habe ich bereits gelernt Bildauswahlen zu
+								machen, Fotos zu bearbeiten und Kalender, sowie Kataloge zu
+								gestalten. Doch ich wollte unbedingt noch einen Schritt weiter
+								gehen und selbst so tolle Bilder erschaffen und zwar mit und für
+								Menschen. Deshalb habe ich mich dazu entschlossen, meine
+								Leidenschaft zu meinem Beruf zu machen und Menschen wie dir zu
+								zeigen was in dir steckt. Nichts macht mich glücklicher, als das
+								Lä- cheln auf den Gesichtern derer zu sehen, denen ich die ent-
+								standenen Bilder eines Shootings zeige...
 							</p>
 						</Col>
 					</Row>
