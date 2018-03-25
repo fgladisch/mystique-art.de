@@ -32,24 +32,25 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 
-		this.toggle = this.toggle.bind(this);
+		this.toggleNavbar = this.toggleNavbar.bind(this);
 		this.closeNavbar = this.closeNavbar.bind(this);
 		this.handleScroll = this.handleScroll.bind(this);
-		this.state = {
-			navbarVisible: false,
-			isOpen: false
-		};
 	}
 
-	toggle() {
+	state = {
+		navbarVisible: false,
+		isNavbarOpen: false
+	};
+
+	toggleNavbar() {
 		this.setState({
-			isOpen: !this.state.isOpen
+			isNavbarOpen: !this.state.isNavbarOpen
 		});
 	}
 
 	closeNavbar() {
 		this.setState({
-			isOpen: false
+			isNavbarOpen: false
 		});
 	}
 
@@ -71,8 +72,8 @@ class App extends Component {
 						<NavbarBrand href="#top">
 							<Media object src={imageLogo} height="50" alt="Logo" />
 						</NavbarBrand>
-						<NavbarToggler onClick={this.toggle} />
-						<Collapse isOpen={this.state.isOpen} navbar>
+						<NavbarToggler onClick={this.toggleNavbar} />
+						<Collapse isOpen={this.state.isNavbarOpen} navbar>
 							<Nav navbar className="mr-auto">
 								<NavItem>
 									<NavLink href="#gallery" onClick={this.closeNavbar}>

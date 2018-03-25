@@ -1,6 +1,22 @@
 .tile {
 	padding: 5px;
 	width: 50%;
+	cursor: pointer;
+	transition: all 200ms;
+}
+
+.tile:hover {
+	z-index: 100;
+	transform: scale(1.025);
+}
+
+.tile img {
+	transition: all 200ms;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tile:hover img {
+	box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.8);
 }
 
 .tile img {

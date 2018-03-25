@@ -3,6 +3,7 @@ import Masonry from "masonry-layout";
 
 import "./Gallery.css";
 import images from "../../images/gallery";
+import ImageModal from "../ImageModal/ImageModal";
 
 const MasonryOptions = {
 	itemSelector: ".tile",
@@ -13,7 +14,9 @@ const MasonryOptions = {
 class Gallery extends Component {
 	state = {
 		loaded: 0,
-		loadingCompleted: false
+		loadingCompleted: false,
+		modalImageIndex: -1,
+		isModalOpen: false
 	};
 
 	onLoaded = () => {
@@ -24,6 +27,13 @@ class Gallery extends Component {
 		this.setState(newState);
 	};
 
+	toggleModal = imageIndex => {
+		this.setState({
+			isModalOpen: !this.state.isModalOpen,
+			modalImageIndex: imageIndex !== null ? imageIndex : this.state.modalImageIndex
+		});
+	};
+
 	render() {
 		if (this.state.loadingCompleted) {
 			new Masonry(this.element, MasonryOptions);
@@ -32,15 +42,22 @@ class Gallery extends Component {
 		const tiles = images.map((item, index) => {
 			const tileClasses = `tile ${!this.state.loadingCompleted ? "hidden" : ""}`;
 			return (
-				<div className={tileClasses} key={index}>
-					<img className="shadow" src={item} alt={index} onLoad={() => this.onLoaded()} />
+				<div className={tileClasses} key={index} onClick={() => this.toggleModal(index)}>
+					<img src={item} alt={index} onLoad={() => this.onLoaded()} />
 				</div>
 			);
 		});
 
 		return (
-			<div className="mb-5" ref={ref => (this.element = ref)}>
-				{tiles}
+			<div>
+				<ImageModal
+					image={images[this.state.modalImageIndex]}
+					isOpen={this.state.isModalOpen}
+					toggle={() => this.toggleModal(null)}
+				/>
+				<div className="mb-5" ref={ref => (this.element = ref)}>
+					{tiles}
+				</div>
 			</div>
 		);
 	}
