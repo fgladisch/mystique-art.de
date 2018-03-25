@@ -13,8 +13,6 @@ import lisa2 from "./lisa_2.jpg";
 import lisa3 from "./lisa_3.jpg";
 import merle1 from "./merle_1.jpg";
 import merle2 from "./merle_2.jpg";
-import mystique1 from "./mystique_1.jpg";
-import mystique2 from "./mystique_2.jpg";
 import sandra1 from "./sandra_1.jpg";
 import sandra2 from "./sandra_2.jpg";
 import sandra3 from "./sandra_3.jpg";
@@ -40,8 +38,6 @@ const gallery = [
 	alienCira2,
 	lisa2,
 	merle2,
-	mystique2,
-	mystique1,
 	sandra2,
 	lisa3,
 	janina1,
