@@ -145,7 +145,7 @@ class App extends Component {
 
 					<Line />
 
-					<Headline>INSZENIERTE FOTOGRAFIE & FANTASY FOTOGRAFIE</Headline>
+					<Headline>INSZENIERTE FOTOGRAFIE & KOSTÜME</Headline>
 
 					<Slides />
 
@@ -203,11 +203,7 @@ class App extends Component {
 						</ul>
 					</Offer>
 
-					<Offer
-						title="KLEINES SHOOTING MIT MAKE-UP UND STYLING"
-						price="€ 200,-"
-						image={imageOffer2}
-					>
+					<Offer title="KLEINES FANTASYSHOOTING" price="€ 240,-" image={imageOffer2}>
 						<div>
 							Komme in deinem eigenen Outfit zu mir oder suche dir nach Abspra- che eins in meinem
 							Fundus aus und ich zaubere für dich ein zu dir pas- sendes Make-Up. Anschließend
