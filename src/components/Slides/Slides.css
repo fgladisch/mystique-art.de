@@ -1,3 +1,11 @@
-.carousel {
+.Slides {
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	padding-top: 43.9453125%;
+	position: relative;
+}
+
+.Slides .carousel-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
