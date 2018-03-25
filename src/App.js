@@ -190,12 +190,12 @@ class App extends Component {
 					<Headline>Preise</Headline>
 
 					<Offer title="COME AS YOU ARE" price="€ 100,-" image={imageOffer1}>
-						<div>
+						<p>
 							Komme fertig geschminkt, gestylt und im eigenen Outfit zu mir und ich fotografiere
 							dich in meinem Home Fotostudio oder draußen an einer nahe gelegenen Location.
 							Anschließend bekommst du von mir 15 Bilder in digitaler Form und ein aufwändig
 							bearbeitetes Bild.
-						</div>
+						</p>
 						<ul>
 							<li>ca. 30 Minuten Shooting</li>
 							<li>15 Auswahldateien</li>
@@ -204,13 +204,13 @@ class App extends Component {
 					</Offer>
 
 					<Offer title="KLEINES FANTASYSHOOTING" price="€ 240,-" image={imageOffer2}>
-						<div>
+						<p>
 							Komme in deinem eigenen Outfit zu mir oder suche dir nach Abspra- che eins in meinem
 							Fundus aus und ich zaubere für dich ein zu dir pas- sendes Make-Up. Anschließend
 							fotografiere ich dich in meinem Home Fotostudio, oder draußen an einer nahe gelegenen
 							Location. Anschlie- ßend bekommst du 20 Bilder in digitaler Form und zwei aufwändig
 							be- arbeitete Bilder.
-						</div>
+						</p>
 						<ul>
 							<li>ca. 1 Stunde Shooting</li>
 							<li>20 Auswahldateien</li>
@@ -218,13 +218,13 @@ class App extends Component {
 						</ul>
 					</Offer>
 
-					<Offer title="GROSSES FANTASYSHOOTING" price="€ 300,-" image={imageOffer3}>
-						<div>
+					<Offer title="GROßES FANTASYSHOOTING" price="€ 300,-" image={imageOffer3}>
+						<p>
 							Suche dir ein Outfit aus meinem Fundus aus und ich zaubere für dich ein aufwändiges
 							Make-Up. Anschließend fotografiere ich dich in mei- nem Home Fotostudio in zwei Sets,
 							oder draußen an einer schönen Location. Anschließend bekommst du 30 Bilder in
 							digitaler Form und drei aufwändig bearbeitete Bilder.
-						</div>
+						</p>
 						<ul>
 							<li>ca. 1,5 -2 Stunden Shooting</li>
 							<li>30 Auswahldateien</li>
@@ -233,13 +233,13 @@ class App extends Component {
 					</Offer>
 
 					<Offer title="SPEZIALSHOOTING" price="€ 400,-" image={imageOffer4}>
-						<div>
+						<p>
 							Lasse dir von mir für dein Shooting ein individuelles Wunschoutfit an- fertigen oder
 							suche dir zwei Outfits aus meinem Fundus aus und ich zaubere für dich ein passendes
 							aufwändiges Make-Up. Anschließend fotografiere ich dich in meinem Home Fotostudio in
 							zwei Sets, oder draußen an einer schönen Location. Anschließend bekommst du 40 Bilder
 							in digitaler Form und 5 aufwändig bearbeitete Bilder.
-						</div>
+						</p>
 						<ul>
 							<li>ca. 2-3 Stunden Shooting</li>
 							<li>40 Auswahldateien</li>
@@ -248,29 +248,29 @@ class App extends Component {
 					</Offer>
 
 					<Offer title="BILDBEARBEITUNG" price="€ 30,-" image={imageOffer5}>
-						<div>
+						<p>
 							Wenn du weitere Bilder aus unserem gemeinsamen Shooting bearbei- ten lassen möchtest,
 							kannst du das für 30,- pro Bild nachträglich bei mir buchen. Oder hast du vielleicht
 							den Wunsch einem privaten Bild von dir Magie zu verleihen? Oder dein Abschlussbild zu
 							verschönern? Dann Schicke mir ein Bild von dir und ich bearbeite es für dich.
-						</div>
+						</p>
 					</Offer>
 
 					<Offer title="BADEWANNENSHOOTING" price="€ 250,-" image={imageOffer6}>
-						<div>
+						<p>
 							Entspanne dich bei einem sinnlichen Bad mit blumigen Düften. Das Badewasser gestalte
 							ich gerne nach deinen Vorstellungen. Wenn du dich mit Dessous wohler fühlst, kannst du
 							dir gerne welche aus meinem Fundus aussuchen. Ein passendes Make-Up zaubere ich dir
 							natürlich auch. Anschließend fotografiere ich dich in meiner Badewanne in
 							verschiedenen Posen. Du bekommst 20 Bilder in digitaler Form und 2 aufwändig
 							bearbeitete Bilder.
-							<ul>
-								<li>ca. 1 Stunde Shooting</li>
-								<li>Materialien für das Wasser (Farbe, Glitzer, Blüten, Perlen...)</li>
-								<li>20 Auswahldateien</li>
-								<li>2 bearbeitete Bilder</li>
-							</ul>
-						</div>
+						</p>
+						<ul>
+							<li>ca. 1 Stunde Shooting</li>
+							<li>Materialien für das Wasser (Farbe, Glitzer, Blüten, Perlen...)</li>
+							<li>20 Auswahldateien</li>
+							<li>2 bearbeitete Bilder</li>
+						</ul>
 					</Offer>
 
 					<Line />
@@ -293,10 +293,10 @@ class App extends Component {
 						</Col>
 						<Col xs="12" md="8">
 							<p>
-								Hinter dem künstlernamen Mystique Art stehe ich, Tatjana, Baujahr 1989. Aufgewachsen
-								bin ich in einem kleinen Städt- chen names Rheinberg. Kaum einer kennt diese Stadt,
-								die zum Kreis Wesel gehört. Ich bin nunmal ein richtiges Landei. Mittlerweile leben
-								mein Lebensgefährte und ich mit einer Katze in Duisburg. Das Großstadtleben hat mich
+								Hinter dem Künstlernamen <b>Mystique Art</b> stehe ich: Tatjana. Aufgewachsen bin
+								ich in einem kleinen Städtchen namens Rheinberg. Kaum jemand kennt diese Stadt, die
+								zum Kreis Wesel gehört. Ich bin nunmal ein richtiges Landei. Mittlerweile leben mein
+								Lebensgefährte und ich mit einer Katze in Duisburg und das Großstadtleben hat mich
 								zu sich geholt.
 								<br />
 								<br />
@@ -312,8 +312,8 @@ class App extends Component {
 								gehen und selbst so tolle Bilder erschaffen und zwar mit und für Menschen. Deshalb
 								habe ich mich dazu entschlossen, meine Leidenschaft zu meinem Beruf zu machen und
 								Menschen wie dir zu zeigen was in dir steckt. Nichts macht mich glücklicher, als das
-								Lä- cheln auf den Gesichtern derer zu sehen, denen ich die ent- standenen Bilder
-								eines Shootings zeige...
+								Lächeln auf den Gesichtern derer zu sehen, denen ich die entstandenen Bilder eines
+								Shootings zeige...
 							</p>
 						</Col>
 					</Row>
@@ -333,8 +333,8 @@ class App extends Component {
 						</p>
 
 						<p>
-							MYSTIQUE ART - FOTOGRAPHY<br />
-							Inhaber: Tatjana Bartsch<br />
+							MYSTIQUE ART - PHOTOGRAPHY<br />
+							Inhaberin: Tatjana Bartsch<br />
 							Neudorfer Markt 11<br />
 							47057 Duisburg
 						</p>

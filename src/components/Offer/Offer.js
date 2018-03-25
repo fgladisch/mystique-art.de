@@ -21,7 +21,9 @@ const Offer = ({ title, price, image, children }) => (
 			<h5>{title}</h5>
 			{children}
 		</Col>
-		<Col xs="2">{price}</Col>
+		<Col md="2">
+			<b>{price}</b>
+		</Col>
 	</Row>
 );
 
