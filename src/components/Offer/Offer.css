@@ -1,0 +1,12 @@
+.Offer-preview,
+.Offer-preview-image {
+	width: 300px;
+}
+
+.Offer-preview-image {
+	width: 100%;
+}
+
+.Offer-price {
+	font-weight: 400;
+}

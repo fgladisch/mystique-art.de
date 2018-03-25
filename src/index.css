@@ -1,11 +1,12 @@
 body {
+	font-family: "Montserrat", sans-serif;
+	background-color: rgb(60, 60, 60);
+	cursor: default;
 	margin: 0;
 	padding: 0;
-	background-color: rgb(60, 60, 60);
 	color: #ddd;
 	padding-bottom: 32px;
 	min-width: 300px;
-	font-family: "Roboto Slab", serif;
 }
 
 .navbar {

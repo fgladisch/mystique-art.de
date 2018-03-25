@@ -16,13 +16,17 @@ import {
 import "./App.css";
 
 import Slides from "./components/Slides/Slides";
-import Grid from "./components/Grid/Grid";
-import Offer from "./components/Offer";
+import Gallery from "./components/Gallery/Gallery";
+import Offer from "./components/Offer/Offer";
 import Headline from "./components/Headline";
 import Line from "./components/Line/Line";
+import Logo from "./components/Logo/Logo";
 
 import imageLogo from "./images/logo.png";
-import imageTatjana from "./images/tatjana.jpg";
+import imageTatjana from "./images/gallery/tatjana_3.jpg";
+
+import { imageOffer1, imageOffer2, imageOffer3, imageOffer4, imageOffer5 } from "./images/offers";
+import imageOffer6 from "./images/gallery/janina_4.jpg";
 
 class App extends Component {
 	constructor(props) {
@@ -53,13 +57,8 @@ class App extends Component {
 		window.addEventListener("scroll", this.handleScroll);
 	}
 
-	componentWillUnmount() {
-		window.removeEventListener("scroll", this.handleScroll);
-	}
-
 	handleScroll(event) {
 		const scrollTop = event.srcElement.documentElement.scrollTop;
-		console.log(scrollTop);
 		const navbarVisible = scrollTop > 150;
 		this.setState({ navbarVisible });
 	}
@@ -142,31 +141,34 @@ class App extends Component {
 				{this.renderNavbar()}
 
 				<Container>
-					<Media object src={imageLogo} alt="Logo" className="logo-center" />
+					<Logo />
 
 					<Line />
+
+					<Headline>INSZENIERTE FOTOGRAFIE & FANTASY FOTOGRAFIE</Headline>
 
 					<Slides />
 
 					<p className="lead text-center">
-						Du möchtest gerne mal für einen Tag dem ganzen Alltagsstress
-						entfliehen, alles weit hinter dir lassen und stattdessen in eine
-						Fantasiewelt entfliehen, in der alles Möglich ist? Du möchtest dich
-						verwandeln, in andere Rollen schlüpfen und sehen wie wandelbar du
-						bist?
+						Du möch&shy;test ger&shy;ne mal für ei&shy;nen Tag dem gan&shy;zen
+						All&shy;tags&shy;stress ent&shy;fliehen, alles weit hin&shy;ter dir las&shy;sen und
+						statt&shy;des&shy;sen in eine Fantasie&shy;welt ent&shy;fliehen, in der alles möglich
+						ist? Du möch&shy;test dich ver&shy;wan&shy;deln, in an&shy;dere Rol&shy;len
+						schlüp&shy;fen und sehen wie wan&shy;del&shy;bar du bist?
 						<br />
 						<br />
-						Dann komm mich besuchen und lass dich von mir für einen Tag
-						verzaubern. Mit viel Kreativität und Liebe zum Detail erschaffe ich
-						mit dir zusammen Märchenwelten. Ich verwandel dich in fantasievolle
-						Gestalten wie Feen, Prinzessinnen, Göttinnen & dunkle Wesen und
-						halte diesen Moment für dich in einem Fotoshooting für alle Ewigkeit
-						fest.
+						Dann komm mich be&shy;suchen und lass dich von mir für einen Tag ver&shy;zaubern. Mit
+						viel Kre&shy;a&shy;ti&shy;vi&shy;tät und Liebe zum De&shy;tail er&shy;schaffe ich mit
+						dir zu&shy;sammen Märchen&shy;welten. Ich ver&shy;wandel dich in
+						fan&shy;ta&shy;sie&shy;volle Ge&shy;stalten wie Feen, Prin&shy;zes&shy;sinnen,
+						Göt&shy;tinnen & dunkle Wesen und halte diesen Mo&shy;ment für dich in ei&shy;nem
+						Foto&shy;shoo&shy;ting für alle Ewig&shy;keit fest.
 						<br />
 						<br />
-						Meine Motivation ist es dich auf eine kleine Reise mitzunehmen und
-						dir zu zeigen, was in dir steckt. Erlebe das Fotoshooting der
-						besonderen Art. Ich freue mich auf dich...
+						Meine Mo&shy;ti&shy;va&shy;tion ist es dich auf eine klei&shy;ne Rei&shy;se
+						mit&shy;zu&shy;neh&shy;men und dir zu zei&shy;gen, was in dir steckt. Er&shy;le&shy;be
+						das Fo&shy;to&shy;shoo&shy;ting der be&shy;son&shy;der&shy;en Art. Ich freue mich auf
+						dich...
 					</p>
 
 					<Line />
@@ -177,7 +179,7 @@ class App extends Component {
 
 					<Headline>Gallerie</Headline>
 
-					<Grid />
+					<Gallery />
 
 					<Line />
 
@@ -187,12 +189,12 @@ class App extends Component {
 
 					<Headline>Preise</Headline>
 
-					<Offer title="COME AS YOU ARE" price="100,-">
+					<Offer title="COME AS YOU ARE" price="€ 100,-" image={imageOffer1}>
 						<div>
-							Komme fertig geschminkt, gestylt und im eigenen Outfit zu mir und
-							ich fotografiere dich in meinem Home Fotostudio oder draußen an
-							einer nahe gelegenen Location. Anschließend bekommst du von mir 15
-							Bilder in digitaler Form und ein aufwändig bearbeitetes Bild.
+							Komme fertig geschminkt, gestylt und im eigenen Outfit zu mir und ich fotografiere
+							dich in meinem Home Fotostudio oder draußen an einer nahe gelegenen Location.
+							Anschließend bekommst du von mir 15 Bilder in digitaler Form und ein aufwändig
+							bearbeitetes Bild.
 						</div>
 						<ul>
 							<li>ca. 30 Minuten Shooting</li>
@@ -201,14 +203,17 @@ class App extends Component {
 						</ul>
 					</Offer>
 
-					<Offer title="KLEINES SHOOTING MIT MAKE-UP UND STYLING" price="200,-">
+					<Offer
+						title="KLEINES SHOOTING MIT MAKE-UP UND STYLING"
+						price="€ 200,-"
+						image={imageOffer2}
+					>
 						<div>
-							Komme in deinem eigenen Outfit zu mir oder suche dir nach Abspra-
-							che eins in meinem Fundus aus und ich zaubere für dich ein zu dir
-							pas- sendes Make-Up. Anschließend fotografiere ich dich in meinem
-							Home Fotostudio, oder draußen an einer nahe gelegenen Location.
-							Anschlie- ßend bekommst du 20 Bilder in digitaler Form und zwei
-							aufwändig be- arbeitete Bilder.
+							Komme in deinem eigenen Outfit zu mir oder suche dir nach Abspra- che eins in meinem
+							Fundus aus und ich zaubere für dich ein zu dir pas- sendes Make-Up. Anschließend
+							fotografiere ich dich in meinem Home Fotostudio, oder draußen an einer nahe gelegenen
+							Location. Anschlie- ßend bekommst du 20 Bilder in digitaler Form und zwei aufwändig
+							be- arbeitete Bilder.
 						</div>
 						<ul>
 							<li>ca. 1 Stunde Shooting</li>
@@ -217,13 +222,12 @@ class App extends Component {
 						</ul>
 					</Offer>
 
-					<Offer title="GROSSES FANTASYSHOOTING" price="300,-">
+					<Offer title="GROSSES FANTASYSHOOTING" price="€ 300,-" image={imageOffer3}>
 						<div>
-							Suche dir ein Outfit aus meinem Fundus aus und ich zaubere für
-							dich ein aufwändiges Make-Up. Anschließend fotografiere ich dich
-							in mei- nem Home Fotostudio in zwei Sets, oder draußen an einer
-							schönen Location. Anschließend bekommst du 30 Bilder in digitaler
-							Form und drei aufwändig bearbeitete Bilder.
+							Suche dir ein Outfit aus meinem Fundus aus und ich zaubere für dich ein aufwändiges
+							Make-Up. Anschließend fotografiere ich dich in mei- nem Home Fotostudio in zwei Sets,
+							oder draußen an einer schönen Location. Anschließend bekommst du 30 Bilder in
+							digitaler Form und drei aufwändig bearbeitete Bilder.
 						</div>
 						<ul>
 							<li>ca. 1,5 -2 Stunden Shooting</li>
@@ -232,15 +236,13 @@ class App extends Component {
 						</ul>
 					</Offer>
 
-					<Offer title="SPEZIALSHOOTING" price="400,-">
+					<Offer title="SPEZIALSHOOTING" price="€ 400,-" image={imageOffer4}>
 						<div>
-							Lasse dir von mir für dein Shooting ein individuelles Wunschoutfit
-							an- fertigen oder suche dir zwei Outfits aus meinem Fundus aus und
-							ich zaubere für dich ein passendes aufwändiges Make-Up.
-							Anschließend fotografiere ich dich in meinem Home Fotostudio in
-							zwei Sets, oder draußen an einer schönen Location. Anschließend
-							bekommst du 40 Bilder in digitaler Form und 5 aufwändig
-							bearbeitete Bilder.
+							Lasse dir von mir für dein Shooting ein individuelles Wunschoutfit an- fertigen oder
+							suche dir zwei Outfits aus meinem Fundus aus und ich zaubere für dich ein passendes
+							aufwändiges Make-Up. Anschließend fotografiere ich dich in meinem Home Fotostudio in
+							zwei Sets, oder draußen an einer schönen Location. Anschließend bekommst du 40 Bilder
+							in digitaler Form und 5 aufwändig bearbeitete Bilder.
 						</div>
 						<ul>
 							<li>ca. 2-3 Stunden Shooting</li>
@@ -249,14 +251,29 @@ class App extends Component {
 						</ul>
 					</Offer>
 
-					<Offer title="BILDBEARBEITUNG" price="30,-">
+					<Offer title="BILDBEARBEITUNG" price="€ 30,-" image={imageOffer5}>
 						<div>
-							Wenn du weitere Bilder aus unserem gemeinsamen Shooting bearbei-
-							ten lassen möchtest, kannst du das für 30,- pro Bild nachträglich
-							bei mir buchen. Oder hast du vielleicht den Wunsch einem privaten
-							Bild von dir Magie zu verleihen? Oder dein Abschlussbild zu
-							verschönern? Dann Schicke mir ein Bild von dir und ich bearbeite
-							es für dich.
+							Wenn du weitere Bilder aus unserem gemeinsamen Shooting bearbei- ten lassen möchtest,
+							kannst du das für 30,- pro Bild nachträglich bei mir buchen. Oder hast du vielleicht
+							den Wunsch einem privaten Bild von dir Magie zu verleihen? Oder dein Abschlussbild zu
+							verschönern? Dann Schicke mir ein Bild von dir und ich bearbeite es für dich.
+						</div>
+					</Offer>
+
+					<Offer title="BADEWANNENSHOOTING" price="€ 250,-" image={imageOffer6}>
+						<div>
+							Entspanne dich bei einem sinnlichen Bad mit blumigen Düften. Das Badewasser gestalte
+							ich gerne nach deinen Vorstellungen. Wenn du dich mit Dessous wohler fühlst, kannst du
+							dir gerne welche aus meinem Fundus aussuchen. Ein passendes Make-Up zaubere ich dir
+							natürlich auch. Anschließend fotografiere ich dich in meiner Badewanne in
+							verschiedenen Posen. Du bekommst 20 Bilder in digitaler Form und 2 aufwändig
+							bearbeitete Bilder.
+							<ul>
+								<li>ca. 1 Stunde Shooting</li>
+								<li>Materialien für das Wasser (Farbe, Glitzer, Blüten, Perlen...)</li>
+								<li>20 Auswahldateien</li>
+								<li>2 bearbeitete Bilder</li>
+							</ul>
 						</div>
 					</Offer>
 
@@ -269,43 +286,38 @@ class App extends Component {
 					<Headline>Über Mich</Headline>
 
 					<Row>
-						<Col xs="12" sm="12" md="6">
+						<Col xs="12" md="4">
 							<Media
-								className="mb-3 shadow"
+								className="App-aboutme-image mb-3 shadow"
 								object
 								width="100%"
 								src={imageTatjana}
 								alt="Tatjana"
 							/>
 						</Col>
-						<Col xs="12" sm="12" md="6">
+						<Col xs="12" md="8">
 							<p>
-								Hinter dem künstlernamen Mystique Art stehe ich, Tatjana,
-								Baujahr 1989. Aufgewachsen bin ich in einem kleinen Städt- chen
-								names Rheinberg. Kaum einer kennt diese Stadt, die zum Kreis
-								Wesel gehört. Ich bin nunmal ein richtiges Landei. Mittlerweile
-								leben mein Lebensgefährte und ich mit einer Katze in Duisburg.
-								Das Großstadtleben hat mich zu sich geholt.
+								Hinter dem künstlernamen Mystique Art stehe ich, Tatjana, Baujahr 1989. Aufgewachsen
+								bin ich in einem kleinen Städt- chen names Rheinberg. Kaum einer kennt diese Stadt,
+								die zum Kreis Wesel gehört. Ich bin nunmal ein richtiges Landei. Mittlerweile leben
+								mein Lebensgefährte und ich mit einer Katze in Duisburg. Das Großstadtleben hat mich
+								zu sich geholt.
 								<br />
 								<br />
-								Seit ich einen Stift in den Händen halten kann, habe ich die
-								Kreativität in mir losgelassen und gezeichnet, gebastelt und mir
-								für meine Kuscheltiere Fantasiewelten ausgedacht. Als ich Älter
-								wurde lebte ich mich an Karneval und Halloween voll aus und
-								erschuf immer ausgefallenere Kostüme. Lange Zeit war das alles
-								jedoch nur ein Hobby. Nachdem ich eine Ausbildung zur
-								Bürokauffrau gemacht hatte, studierte ich Informations- und
-								Kommunikationsdesign, um dem kreativen Arbeiten näher zu kommen.
-								Danach arbeitete ich ein paar Jahre als Grafikerin in einem
-								Kalenderverlag. Dort habe ich bereits gelernt Bildauswahlen zu
-								machen, Fotos zu bearbeiten und Kalender, sowie Kataloge zu
-								gestalten. Doch ich wollte unbedingt noch einen Schritt weiter
-								gehen und selbst so tolle Bilder erschaffen und zwar mit und für
-								Menschen. Deshalb habe ich mich dazu entschlossen, meine
-								Leidenschaft zu meinem Beruf zu machen und Menschen wie dir zu
-								zeigen was in dir steckt. Nichts macht mich glücklicher, als das
-								Lä- cheln auf den Gesichtern derer zu sehen, denen ich die ent-
-								standenen Bilder eines Shootings zeige...
+								Seit ich einen Stift in den Händen halten kann, habe ich die Kreativität in mir
+								losgelassen und gezeichnet, gebastelt und mir für meine Kuscheltiere Fantasiewelten
+								ausgedacht. Als ich Älter wurde lebte ich mich an Karneval und Halloween voll aus
+								und erschuf immer ausgefallenere Kostüme. Lange Zeit war das alles jedoch nur ein
+								Hobby. Nachdem ich eine Ausbildung zur Bürokauffrau gemacht hatte, studierte ich
+								Informations- und Kommunikationsdesign, um dem kreativen Arbeiten näher zu kommen.
+								Danach arbeitete ich ein paar Jahre als Grafikerin in einem Kalenderverlag. Dort
+								habe ich bereits gelernt Bildauswahlen zu machen, Fotos zu bearbeiten und Kalender,
+								sowie Kataloge zu gestalten. Doch ich wollte unbedingt noch einen Schritt weiter
+								gehen und selbst so tolle Bilder erschaffen und zwar mit und für Menschen. Deshalb
+								habe ich mich dazu entschlossen, meine Leidenschaft zu meinem Beruf zu machen und
+								Menschen wie dir zu zeigen was in dir steckt. Nichts macht mich glücklicher, als das
+								Lä- cheln auf den Gesichtern derer zu sehen, denen ich die ent- standenen Bilder
+								eines Shootings zeige...
 							</p>
 						</Col>
 					</Row>
@@ -320,8 +332,8 @@ class App extends Component {
 
 					<div className="text-center">
 						<p>
-							Buchungsanfragen bitte an meine unten angegebene E-Mail Adresse
-							oder über den Messenger meiner Facebook-Seite.
+							Buchungsanfragen bitte an meine unten angegebene E-Mail Adresse oder über den
+							Messenger meiner Facebook-Seite.
 						</p>
 
 						<p>
@@ -332,10 +344,7 @@ class App extends Component {
 						</p>
 
 						<p>
-							E-Mail:{" "}
-							<a href="mailto:tatjana.bartsch89@gmail.com">
-								tatjana.bartsch89@gmail.com
-							</a>
+							E-Mail: <a href="mailto:tatjana@mystique-art.de">tatjana@mystique-art.de</a>
 							<br />
 							Tel.: <a href="tel:+491732005842">+491732005842</a>
 						</p>
@@ -350,79 +359,67 @@ class App extends Component {
 					<Headline>Datenschutz&shy;erklärung</Headline>
 
 					<p>
-						Nachfolgend möchten wir Sie über unsere Datenschutzerklärung
-						informieren. Sie finden hier Informationen über die Erhebung und
-						Verwendung persönlicher Daten bei der Nutzung unserer Webseite. Wir
-						beachten dabei das für Deutschland geltende Datenschutzrecht. Sie
+						Nachfolgend möchten wir Sie über unsere Datenschutzerklärung informieren. Sie finden
+						hier Informationen über die Erhebung und Verwendung persönlicher Daten bei der Nutzung
+						unserer Webseite. Wir beachten dabei das für Deutschland geltende Datenschutzrecht. Sie
 						können diese Erklärung jederzeit auf unserer Webseite abrufen.
 					</p>
 
 					<p>
-						Wir weisen ausdrücklich darauf hin, dass die Datenübertragung im
-						Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken
-						aufweisen und nicht lückenlos vor dem Zugriff durch Dritte geschützt
-						werden kann.
+						Wir weisen ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei der
+						Kommunikation per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem
+						Zugriff durch Dritte geschützt werden kann.
 					</p>
 
 					<h5 className="text-center">Personenbezogene Daten</h5>
 
 					<p>
-						Sie können unsere Webseite ohne Angabe personenbezogener Daten
-						besuchen. Soweit auf unseren Seiten personenbezogene Daten (wie
-						Name, Anschrift oder E-Mail Adresse) erhoben werden, erfolgt dies,
-						soweit möglich, auf freiwilliger Basis. Diese Daten werden ohne Ihre
-						ausdrückliche Zustimmung nicht an Dritte weitergegeben. Sofern
-						zwischen Ihnen und uns ein Vertragsverhältnis begründet, inhaltlich
-						ausgestaltet oder geändert werden soll oder Sie an uns eine Anfrage
-						stellen, erheben und verwenden wir personenbezogene Daten von Ihnen,
-						soweit dies zu diesen Zwecken erforderlich ist (Bestandsdaten). Wir
-						erheben, verarbeiten und nutzen personenbezogene Daten soweit dies
-						erforderlich ist, um Ihnen die Inanspruchnahme des Webangebots zu
-						ermöglichen (Nutzungsdaten). Sämtliche personenbezogenen Daten
-						werden nur solange gespeichert wie dies für den geannten Zweck
-						(Bearbeitung Ihrer Anfrage oder Abwicklung eines Vertrags)
-						erforderlich ist. Hierbei werden steuer- und handelsrechtliche
-						Aufbewahrungsfristen berücksichtigt. Auf Anordnung der zuständigen
-						Stellen dürfen wir im Einzelfall Auskunft über diese Daten
-						(Bestandsdaten) erteilen, soweit dies für Zwecke der
-						Strafverfolgung, zur Gefahrenabwehr, zur Erfüllung der gesetzlichen
-						Aufgaben der Verfassungsschutzbehörden oder des Militärischen
-						Abschirmdienstes oder zur Durchsetzung der Rechte am geistigen
+						Sie können unsere Webseite ohne Angabe personenbezogener Daten besuchen. Soweit auf
+						unseren Seiten personenbezogene Daten (wie Name, Anschrift oder E-Mail Adresse) erhoben
+						werden, erfolgt dies, soweit möglich, auf freiwilliger Basis. Diese Daten werden ohne
+						Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Sofern zwischen Ihnen und
+						uns ein Vertragsverhältnis begründet, inhaltlich ausgestaltet oder geändert werden soll
+						oder Sie an uns eine Anfrage stellen, erheben und verwenden wir personenbezogene Daten
+						von Ihnen, soweit dies zu diesen Zwecken erforderlich ist (Bestandsdaten). Wir erheben,
+						verarbeiten und nutzen personenbezogene Daten soweit dies erforderlich ist, um Ihnen die
+						Inanspruchnahme des Webangebots zu ermöglichen (Nutzungsdaten). Sämtliche
+						personenbezogenen Daten werden nur solange gespeichert wie dies für den geannten Zweck
+						(Bearbeitung Ihrer Anfrage oder Abwicklung eines Vertrags) erforderlich ist. Hierbei
+						werden steuer- und handelsrechtliche Aufbewahrungsfristen berücksichtigt. Auf Anordnung
+						der zuständigen Stellen dürfen wir im Einzelfall Auskunft über diese Daten
+						(Bestandsdaten) erteilen, soweit dies für Zwecke der Strafverfolgung, zur
+						Gefahrenabwehr, zur Erfüllung der gesetzlichen Aufgaben der Verfassungsschutzbehörden
+						oder des Militärischen Abschirmdienstes oder zur Durchsetzung der Rechte am geistigen
 						Eigentum erforderlich ist.
 					</p>
 
 					<h4 className="text-center">Haftungsausschluss</h4>
 
 					<p>
-						Als Dienstanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte
-						auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach
-						§§ 8 bis 10 TMG sind wir als Dienstanbieter jedoch nicht
-						verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
-						überwachen oder nach Umständen zu forschen, die auf eine
-						rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung
-						oder Sperrung der Nutzung von Informationen nach den allgemeinen
-						Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist
-						jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
-						Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
-						Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+						Als Dienstanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
+						nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
+						Dienstanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
+						Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige
+						Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von
+						Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine
+						diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
+						Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden
+						wir diese Inhalte umgehend entfernen.
 					</p>
 
 					<h5 className="text-center">Urheberrecht</h5>
 
 					<p>
-						Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
-						diesen Seiten unterliegen dem deutschen Urheberrecht. Die
-						Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
-						Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
-						schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-						Downloads und Kopien dieser Seite sind nur für den privaten, nicht
-						kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser
-						Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte
-						Dritter beachtet. Insbesondere werden Inhalte Dritter als solche
-						gekennzeichnet. Sollten Sie trotzdem auf eine
-						Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
-						entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen
-						werden wir derartige Inhalte umgehend entfernen.
+						Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
+						dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art
+						der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen
+						Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind
+						nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf
+						dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter
+						beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie
+						trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
+						entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige
+						Inhalte umgehend entfernen.
 					</p>
 				</Container>
 

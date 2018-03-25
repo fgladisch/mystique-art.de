@@ -1,7 +1,8 @@
-.logo-center {
+.App-aboutme-image {
 	display: block;
+	max-height: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 50px;
-	margin-bottom: -50px;
+	width: 100%;
+	max-width: 250px;
 }
