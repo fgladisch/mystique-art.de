@@ -206,11 +206,11 @@ class App extends Component {
 
 					<Offer title="KLEINES FANTASYSHOOTING" price="€ 240,-" image={imageOffer2}>
 						<p>
-							Komme in deinem eigenen Outfit zu mir oder suche dir nach Abspra- che eins in meinem
-							Fundus aus und ich zaubere für dich ein zu dir pas- sendes Make-Up. Anschließend
+							Komme in deinem eigenen Outfit zu mir oder suche dir nach Absprache eins in meinem
+							Fundus aus und ich zaubere für dich ein zu dir passendes Make-Up. Anschließend
 							fotografiere ich dich in meinem Home Fotostudio, oder draußen an einer nahe gelegenen
-							Location. Anschlie- ßend bekommst du 20 Bilder in digitaler Form und zwei aufwändig
-							be- arbeitete Bilder.
+							Location. Anschließend bekommst du 20 Bilder in digitaler Form und zwei aufwändig
+							bearbeitete Bilder.
 						</p>
 						<ul>
 							<li>ca. 1 Stunde Shooting</li>
@@ -222,7 +222,7 @@ class App extends Component {
 					<Offer title="GROßES FANTASYSHOOTING" price="€ 300,-" image={imageOffer3}>
 						<p>
 							Suche dir ein Outfit aus meinem Fundus aus und ich zaubere für dich ein aufwändiges
-							Make-Up. Anschließend fotografiere ich dich in mei- nem Home Fotostudio in zwei Sets,
+							Make-Up. Anschließend fotografiere ich dich in meinem Home Fotostudio in zwei Sets,
 							oder draußen an einer schönen Location. Anschließend bekommst du 30 Bilder in
 							digitaler Form und drei aufwändig bearbeitete Bilder.
 						</p>
@@ -235,7 +235,7 @@ class App extends Component {
 
 					<Offer title="SPEZIALSHOOTING" price="€ 400,-" image={imageOffer4}>
 						<p>
-							Lasse dir von mir für dein Shooting ein individuelles Wunschoutfit an- fertigen oder
+							Lasse dir von mir für dein Shooting ein individuelles Wunschoutfit anfertigen oder
 							suche dir zwei Outfits aus meinem Fundus aus und ich zaubere für dich ein passendes
 							aufwändiges Make-Up. Anschließend fotografiere ich dich in meinem Home Fotostudio in
 							zwei Sets, oder draußen an einer schönen Location. Anschließend bekommst du 40 Bilder
@@ -250,8 +250,8 @@ class App extends Component {
 
 					<Offer title="BILDBEARBEITUNG" price="€ 30,-" image={imageOffer5}>
 						<p>
-							Wenn du weitere Bilder aus unserem gemeinsamen Shooting bearbei- ten lassen möchtest,
-							kannst du das für 30,- pro Bild nachträglich bei mir buchen. Oder hast du vielleicht
+							Wenn du weitere Bilder aus unserem gemeinsamen Shooting bearbeiten lassen möchtest,
+							kannst du das für 30€ pro Bild nachträglich bei mir buchen. Oder hast du vielleicht
 							den Wunsch einem privaten Bild von dir Magie zu verleihen? Oder dein Abschlussbild zu
 							verschönern? Dann Schicke mir ein Bild von dir und ich bearbeite es für dich.
 						</p>
