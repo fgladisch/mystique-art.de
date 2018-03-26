@@ -9,7 +9,6 @@ class ImageModal extends Component {
 	};
 
 	onLoaded = ({ target: img }) => {
-		console.log(img);
 		this.setState({
 			isLarge: img.offsetWidth > img.offsetHeight
 		});
@@ -17,7 +16,6 @@ class ImageModal extends Component {
 
 	render() {
 		const { isOpen, toggle, image } = this.props;
-		console.log(this.state.isLarge);
 		return (
 			<Modal size={this.state.isLarge ? "lg" : ""} centered={true} isOpen={isOpen} toggle={toggle}>
 				<Media object width="100%" src={image} alt="Vorschau" onLoad={this.onLoaded} />
