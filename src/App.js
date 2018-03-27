@@ -178,7 +178,7 @@ class App extends Component {
 						Gallerie
 					</a>
 
-					<Headline>Gallerie</Headline>
+					<Headline>Galerie</Headline>
 
 					<Gallery />
 
@@ -296,14 +296,14 @@ class App extends Component {
 							<p>
 								Hinter dem Künstlernamen <b>Mystique Art</b> stehe ich: Tatjana. Aufgewachsen bin
 								ich in einem kleinen Städtchen namens Rheinberg. Kaum jemand kennt diese Stadt, die
-								zum Kreis Wesel gehört. Ich bin nunmal ein richtiges Landei. Mittlerweile leben mein
-								Lebensgefährte und ich mit einer Katze in Duisburg und das Großstadtleben hat mich
-								zu sich geholt.
+								zum Kreis Wesel gehört. Ich bin nun mal ein richtiges Landei. Mittlerweile leben
+								mein Lebensgefährte und ich mit einer Katze in Duisburg und das Großstadtleben hat
+								mich zu sich geholt.
 								<br />
 								<br />
 								Seit ich einen Stift in den Händen halten kann, habe ich die Kreativität in mir
 								losgelassen und gezeichnet, gebastelt und mir für meine Kuscheltiere Fantasiewelten
-								ausgedacht. Als ich Älter wurde lebte ich mich an Karneval und Halloween voll aus
+								ausgedacht. Als ich älter wurde, lebte ich mich an Karneval und Halloween voll aus
 								und erschuf immer ausgefallenere Kostüme. Lange Zeit war das alles jedoch nur ein
 								Hobby. Nachdem ich eine Ausbildung zur Bürokauffrau gemacht hatte, studierte ich
 								Informations- und Kommunikationsdesign, um dem kreativen Arbeiten näher zu kommen.
