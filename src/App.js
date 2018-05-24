@@ -134,6 +134,12 @@ class App extends Component {
 
 	render() {
 		return (
+			<p className="lead text-center my-5">
+				This website is currently under construction.
+			</p>
+		);
+		/*
+		return (
 			<div>
 				<a className="anchor" name="top">
 					Top
@@ -425,6 +431,7 @@ class App extends Component {
 				<footer className="text-center">Copyright 2017 by Mystique Art</footer>
 			</div>
 		);
+		*/
 	}
 }
 
