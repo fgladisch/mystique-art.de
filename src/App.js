@@ -294,11 +294,11 @@ class App extends Component {
 						</Col>
 						<Col xs="12" md="8">
 							<p>
-								Hinter dem Künstlernamen <b>Mystique Art</b> stehe ich: Tatjana. Aufgewachsen bin
-								ich in einem kleinen Städtchen namens Rheinberg. Kaum jemand kennt diese Stadt, die
-								zum Kreis Wesel gehört. Ich bin nun mal ein richtiges Landei. Mittlerweile leben
-								mein Lebensgefährte und ich mit einer Katze in Duisburg und das Großstadtleben hat
-								mich zu sich geholt.
+								Hinter dem Künstlernamen <strong>Mystique Art</strong> stehe ich: Tatjana.
+								Aufgewachsen bin ich in einem kleinen Städtchen namens Rheinberg. Kaum jemand kennt
+								diese Stadt, die zum Kreis Wesel gehört. Ich bin nun mal ein richtiges Landei.
+								Mittlerweile leben mein Lebensgefährte und ich mit einer Katze in Duisburg und das
+								Großstadtleben hat mich zu sich geholt.
 								<br />
 								<br />
 								Seit ich einen Stift in den Händen halten kann, habe ich die Kreativität in mir
@@ -334,15 +334,9 @@ class App extends Component {
 						</p>
 
 						<p>
-							MYSTIQUE ART - PHOTOGRAPHY<br />
-							Inhaberin: Tatjana Bartsch<br />
-							Neudorfer Markt 11<br />
-							47057 Duisburg
-						</p>
-
-						<p>
 							E-Mail: <a href="mailto:tatjana@mystique-art.de">tatjana@mystique-art.de</a>
-							<br />
+						</p>
+						<p>
 							Tel.: <a href="tel:+491732005842">+491732005842</a>
 						</p>
 					</div>
@@ -350,74 +344,114 @@ class App extends Component {
 					<Line />
 
 					<a className="anchor" name="legal">
-						Datenschutzerklärung
+						Impressum
 					</a>
+
+					<Headline>Impressum</Headline>
+
+					<div className="text-center">
+						<h5>Angaben gemäß §5 TMG:</h5>
+						<p>
+							<strong>Mystique Art - Photography</strong>
+							<br />
+							Tatjana Bartsch<br />
+							Neudorfer Markt 11<br />
+							47057 Duisburg<br />
+						</p>
+						<p>
+							Tel.: +491732005842<br />
+							E-Mail: tatjana@mystique-art.de
+						</p>
+					</div>
 
 					<Headline>Datenschutz&shy;erklärung</Headline>
 
-					<p>
-						Nachfolgend möchten wir Sie über unsere Datenschutzerklärung informieren. Sie finden
-						hier Informationen über die Erhebung und Verwendung persönlicher Daten bei der Nutzung
-						unserer Webseite. Wir beachten dabei das für Deutschland geltende Datenschutzrecht. Sie
-						können diese Erklärung jederzeit auf unserer Webseite abrufen.
-					</p>
+					<div className="text-center">
+						<p>
+							Nachfolgend möchten wir Sie über unsere Datenschutzerklärung informieren. Sie finden
+							hier Informationen über die Erhebung und Verwendung persönlicher Daten bei der Nutzung
+							unserer Webseite. Wir beachten dabei das für Deutschland geltende Datenschutzrecht.
+							Sie können diese Erklärung jederzeit auf unserer Webseite abrufen.
+						</p>
 
-					<p>
-						Wir weisen ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei der
-						Kommunikation per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem
-						Zugriff durch Dritte geschützt werden kann.
-					</p>
+						<p>
+							Wir weisen ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei
+							der Kommunikation per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem
+							Zugriff durch Dritte geschützt werden kann.
+						</p>
 
-					<h5 className="text-center">Personenbezogene Daten</h5>
+						<h4> Streitschlichtung </h4>
 
-					<p>
-						Sie können unsere Webseite ohne Angabe personenbezogener Daten besuchen. Soweit auf
-						unseren Seiten personenbezogene Daten (wie Name, Anschrift oder E-Mail Adresse) erhoben
-						werden, erfolgt dies, soweit möglich, auf freiwilliger Basis. Diese Daten werden ohne
-						Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Sofern zwischen Ihnen und
-						uns ein Vertragsverhältnis begründet, inhaltlich ausgestaltet oder geändert werden soll
-						oder Sie an uns eine Anfrage stellen, erheben und verwenden wir personenbezogene Daten
-						von Ihnen, soweit dies zu diesen Zwecken erforderlich ist (Bestandsdaten). Wir erheben,
-						verarbeiten und nutzen personenbezogene Daten soweit dies erforderlich ist, um Ihnen die
-						Inanspruchnahme des Webangebots zu ermöglichen (Nutzungsdaten). Sämtliche
-						personenbezogenen Daten werden nur solange gespeichert wie dies für den geannten Zweck
-						(Bearbeitung Ihrer Anfrage oder Abwicklung eines Vertrags) erforderlich ist. Hierbei
-						werden steuer- und handelsrechtliche Aufbewahrungsfristen berücksichtigt. Auf Anordnung
-						der zuständigen Stellen dürfen wir im Einzelfall Auskunft über diese Daten
-						(Bestandsdaten) erteilen, soweit dies für Zwecke der Strafverfolgung, zur
-						Gefahrenabwehr, zur Erfüllung der gesetzlichen Aufgaben der Verfassungsschutzbehörden
-						oder des Militärischen Abschirmdienstes oder zur Durchsetzung der Rechte am geistigen
-						Eigentum erforderlich ist.
-					</p>
+						<p>
+							Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+							Verbraucherschlichtungsstelle teilzunehmen.
+						</p>
 
-					<h4 className="text-center">Haftungsausschluss</h4>
+						<h4>Personenbezogene Daten</h4>
 
-					<p>
-						Als Dienstanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
-						nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
-						Dienstanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
-						Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige
-						Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von
-						Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine
-						diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
-						Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden
-						wir diese Inhalte umgehend entfernen.
-					</p>
+						<p>
+							Sie können unsere Webseite ohne Angabe personenbezogener Daten besuchen. Soweit auf
+							unseren Seiten personenbezogene Daten (wie Name, Anschrift oder E-Mail Adresse)
+							erhoben werden, erfolgt dies, soweit möglich, auf freiwilliger Basis. Diese Daten
+							werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Sofern
+							zwischen Ihnen und uns ein Vertragsverhältnis begründet, inhaltlich ausgestaltet oder
+							geändert werden soll oder Sie an uns eine Anfrage stellen, erheben und verwenden wir
+							personenbezogene Daten von Ihnen, soweit dies zu diesen Zwecken erforderlich ist
+							(Bestandsdaten). Wir erheben, verarbeiten und nutzen personenbezogene Daten soweit
+							dies erforderlich ist, um Ihnen die Inanspruchnahme des Webangebots zu ermöglichen
+							(Nutzungsdaten). Sämtliche personenbezogenen Daten werden nur solange gespeichert wie
+							dies für den geannten Zweck (Bearbeitung Ihrer Anfrage oder Abwicklung eines Vertrags)
+							erforderlich ist. Hierbei werden steuer- und handelsrechtliche Aufbewahrungsfristen
+							berücksichtigt. Auf Anordnung der zuständigen Stellen dürfen wir im Einzelfall
+							Auskunft über diese Daten (Bestandsdaten) erteilen, soweit dies für Zwecke der
+							Strafverfolgung, zur Gefahrenabwehr, zur Erfüllung der gesetzlichen Aufgaben der
+							Verfassungsschutzbehörden oder des Militärischen Abschirmdienstes oder zur
+							Durchsetzung der Rechte am geistigen Eigentum erforderlich ist.
+						</p>
 
-					<h5 className="text-center">Urheberrecht</h5>
+						<h4>Haftungsausschluss</h4>
 
-					<p>
-						Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
-						dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art
-						der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen
-						Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind
-						nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf
-						dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter
-						beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie
-						trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
-						entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige
-						Inhalte umgehend entfernen.
-					</p>
+						<p>
+							Als Dienstanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
+							nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
+							Dienstanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
+							Informationen zu überwachen oder nach Umständen zu forschen, die auf eine
+							rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der
+							Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
+							Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer
+							konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
+							Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+						</p>
+
+						<h4>Urheberrecht</h4>
+
+						<p>
+							Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
+							unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung
+							und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
+							schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien
+							dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit
+							die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die
+							Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche
+							gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam
+							werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von
+							Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+						</p>
+
+						<h4>Haftung für Links</h4>
+
+						<p>
+							Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
+							Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr
+							übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+							oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt
+							der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum
+							Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der
+							verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht
+							zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend
+							entfernen.
+						</p>
+					</div>
 				</Container>
 
 				<Line />
