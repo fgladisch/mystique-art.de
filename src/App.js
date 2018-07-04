@@ -329,8 +329,8 @@ class App extends Component {
 
 					<div className="text-center">
 						<p>
-							Buchungsanfragen bitte an meine unten angegebene E-Mail Adresse oder über den
-							Messenger meiner Facebook-Seite.
+							Buchungsanfragen bitte an meine unten angegebene E-Mail-Adresse oder über den
+							Messenger bei Facebook oder Instagram.
 						</p>
 
 						<p>
