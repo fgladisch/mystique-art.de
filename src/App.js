@@ -24,6 +24,7 @@ import Logo from "./components/Logo/Logo";
 
 import imageLogo from "./images/logo.png";
 import imageTatjana from "./images/gallery/tatjana_3.jpg";
+import imageSpecial1 from "./images/specials/special_1.jpg";
 
 import { imageOffer1, imageOffer2, imageOffer3, imageOffer4, imageOffer5 } from "./images/offers";
 import imageOffer6 from "./images/gallery/janina_4.jpg";
@@ -171,6 +172,22 @@ class App extends Component {
 						das Fo&shy;to&shy;shoo&shy;ting der be&shy;son&shy;der&shy;en Art. Ich freue mich auf
 						dich...
 					</p>
+
+					<Line />
+
+					<a className="anchor" name="specials">
+						Angebot
+					</a>
+
+					<Headline>Angebot</Headline>
+
+					<Media
+						className="mb-3 shadow"
+						object
+						width="100%"
+						src={imageSpecial1}
+						alt="Aktuelles Angebot"
+					/>
 
 					<Line />
 
