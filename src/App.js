@@ -1,33 +1,20 @@
 import React, { Component } from "react";
-import {
-	Collapse,
-	Navbar,
-	NavbarToggler,
-	NavbarBrand,
-	Nav,
-	NavItem,
-	NavLink,
-	Container,
-	Row,
-	Col,
-	Media
-} from "reactstrap";
-
+import { Col, Collapse, Container, Media, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Row } from "reactstrap";
 import "./App.css";
-
-import Slides from "./components/Slides/Slides";
 import Gallery from "./components/Gallery/Gallery";
-import Offer from "./components/Offer/Offer";
 import Headline from "./components/Headline";
 import Line from "./components/Line/Line";
 import Logo from "./components/Logo/Logo";
-
-import imageLogo from "./images/logo.png";
-import imageTatjana from "./images/gallery/tatjana_3.jpg";
-import imageSpecial1 from "./images/specials/special_1.jpg";
-
-import { imageOffer1, imageOffer2, imageOffer3, imageOffer4, imageOffer5 } from "./images/offers";
+import Offer from "./components/Offer/Offer";
+import Slides from "./components/Slides/Slides";
 import imageOffer6 from "./images/gallery/janina_4.jpg";
+import imageTatjana from "./images/gallery/tatjana_3.jpg";
+import imageLogo from "./images/logo.png";
+import { imageOffer1, imageOffer2, imageOffer3, imageOffer4, imageOffer5 } from "./images/offers";
+
+
+
+
 
 class App extends Component {
 	constructor(props) {
@@ -172,22 +159,6 @@ class App extends Component {
 						das Fo&shy;to&shy;shoo&shy;ting der be&shy;son&shy;der&shy;en Art. Ich freue mich auf
 						dich...
 					</p>
-
-					<Line />
-
-					<a className="anchor" name="specials">
-						Angebot
-					</a>
-
-					<Headline>Angebot</Headline>
-
-					<Media
-						className="mb-3 shadow"
-						object
-						width="100%"
-						src={imageSpecial1}
-						alt="Aktuelles Angebot"
-					/>
 
 					<Line />
 
