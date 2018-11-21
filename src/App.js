@@ -1,5 +1,17 @@
 import React, { Component } from "react";
-import { Col, Collapse, Container, Media, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Row } from "reactstrap";
+import {
+	Col,
+	Collapse,
+	Container,
+	Media,
+	Nav,
+	Navbar,
+	NavbarBrand,
+	NavbarToggler,
+	NavItem,
+	NavLink,
+	Row
+} from "reactstrap";
 import "./App.css";
 import Gallery from "./components/Gallery/Gallery";
 import Headline from "./components/Headline";
@@ -11,10 +23,7 @@ import imageOffer6 from "./images/gallery/janina_4.jpg";
 import imageTatjana from "./images/gallery/tatjana_3.jpg";
 import imageLogo from "./images/logo.png";
 import { imageOffer1, imageOffer2, imageOffer3, imageOffer4, imageOffer5 } from "./images/offers";
-
-
-
-
+import image50PercentOff from "./images/specials/50_percent_off.jpg";
 
 class App extends Component {
 	constructor(props) {
@@ -162,6 +171,23 @@ class App extends Component {
 
 					<Line />
 
+					<a className="anchor" name="specials">
+						Angebot
+					</a>
+
+					<Headline>Angebote</Headline>
+
+					<div className="text-center">
+						<Media
+							className="App-special mb-3 shadow"
+							object
+							src={image50PercentOff}
+							alt="Special"
+						/>
+					</div>
+
+					<Line />
+
 					<a className="anchor" name="gallery">
 						Gallerie
 					</a>
@@ -275,7 +301,6 @@ class App extends Component {
 							<Media
 								className="App-aboutme-image mb-3 shadow"
 								object
-								width="100%"
 								src={imageTatjana}
 								alt="Tatjana"
 							/>
@@ -342,12 +367,16 @@ class App extends Component {
 						<p>
 							<strong>Mystique Art - Photography</strong>
 							<br />
-							Tatjana Bartsch<br />
-							Neudorfer Markt 11<br />
-							47057 Duisburg<br />
+							Tatjana Bartsch
+							<br />
+							Neudorfer Markt 11
+							<br />
+							47057 Duisburg
+							<br />
 						</p>
 						<p>
-							Tel.: +491732005842<br />
+							Tel.: +491732005842
+							<br />
 							E-Mail: tatjana@mystique-art.de
 						</p>
 					</div>
