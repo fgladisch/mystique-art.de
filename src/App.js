@@ -19,7 +19,7 @@ import Line from "./components/Line/Line";
 import Logo from "./components/Logo/Logo";
 import Offer from "./components/Offer/Offer";
 import Slides from "./components/Slides/Slides";
-import imageTatjana from "./images/gallery/tatjana_3.jpg";
+import imageTatjana from "./images/aboutme.jpg";
 import imageLogo from "./images/logo.png";
 import {
 	imageOffer1,
@@ -282,9 +282,7 @@ class App extends Component {
 							Entspanne dich bei einem sinnlichen Bad mit blumigen Düften. Das Badewasser gestalte
 							ich gerne nach deinen Vorstellungen. Wenn du dich mit Dessous wohler fühlst, kannst du
 							dir gerne welche aus meinem Fundus aussuchen. Ein passendes Make-Up zaubere ich dir
-							natürlich auch. Anschließend fotografiere ich dich in meiner Badewanne in
-							verschiedenen Posen. Du bekommst 20 Bilder in digitaler Form und 2 aufwändig
-							bearbeitete Bilder.
+							natürlich auch.
 						</p>
 						<ul>
 							<li>ca. 45 Minuten Make-Up & Styling</li>
@@ -298,11 +296,8 @@ class App extends Component {
 					<Offer title="DESSOUSSHOOTING" price="€ 330,-" image={imageOffer6}>
 						<p>
 							Suche dir Dessous aus meinem Fundus aus und ich zaubere für dich ein sinnliches
-							Make-Up. Anschließend fotografiere ich dich in meinem antiken Sessel und auf dem Bett
-							mit kuschligen Decken und Kissen. Anschließend bekommst du 50 leicht bearbeitete
-							Bilder in Webauflösung in digitaler Form zugeschickt. Von diesen 50 Bildern kannst du
-							dir deine vier Favoriten aussuchen, die ich dir aufwändig bearbeiteten werde und dir
-							in hoher Auflösung zuschicken werde.
+							Make-Up. Anschließend fotografiere ich dich in meinem antiken Sessel und /oder auf dem
+							Bett mit kuschligen Decken und Kissen und/ oder in meiner Fotoecke.
 						</p>
 						<ul>
 							<li>ca. 45 bis 60 Minuten Make-Up & Styling</li>
@@ -345,10 +340,10 @@ class App extends Component {
 
 					<Offer title="HOCHZEITSSHOOTINGS" image={imageOffer9}>
 						<Row>
-							<Col xs="10" lg>
+							<Col xs="9" lg>
 								<strong>Kleines Paket</strong>
 							</Col>
-							<Col md="2">
+							<Col md="3" className="text-right">
 								<strong>€ 259,-</strong>
 							</Col>
 						</Row>
@@ -364,10 +359,10 @@ class App extends Component {
 							</li>
 						</ul>
 						<Row>
-							<Col xs="10" lg>
+							<Col xs="9" lg>
 								<strong>Mittleres Paket</strong>
 							</Col>
-							<Col md="2">
+							<Col md="3" className="text-right">
 								<strong>€ 599,-</strong>
 							</Col>
 						</Row>
@@ -384,10 +379,10 @@ class App extends Component {
 							<li>gestaltung und Druck eines Fotoalbums mit den besten Bildern</li>
 						</ul>
 						<Row>
-							<Col xs="10" lg>
+							<Col xs="9" lg>
 								<strong>Großes Paket</strong>
 							</Col>
-							<Col md="2">
+							<Col md="3" className="text-right">
 								<strong>€ 1.099,-</strong>
 							</Col>
 						</Row>
@@ -404,10 +399,10 @@ class App extends Component {
 							<li>gestaltung und Druck eines Fotoalbums mit den besten Bildern</li>
 						</ul>
 						<Row>
-							<Col xs="10" lg>
+							<Col xs="9" lg>
 								<strong>Premium Paket</strong>
 							</Col>
-							<Col md="2">
+							<Col md="3" className="text-right">
 								<strong>€ 1.599,-</strong>
 							</Col>
 						</Row>
