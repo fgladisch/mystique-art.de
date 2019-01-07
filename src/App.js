@@ -19,11 +19,21 @@ import Line from "./components/Line/Line";
 import Logo from "./components/Logo/Logo";
 import Offer from "./components/Offer/Offer";
 import Slides from "./components/Slides/Slides";
-import imageOffer6 from "./images/gallery/janina_4.jpg";
 import imageTatjana from "./images/gallery/tatjana_3.jpg";
 import imageLogo from "./images/logo.png";
-import { imageOffer1, imageOffer2, imageOffer3, imageOffer4, imageOffer5 } from "./images/offers";
-import image50PercentOff from "./images/specials/50_percent_off.jpg";
+import {
+	imageOffer1,
+	imageOffer2,
+	imageOffer3,
+	imageOffer4,
+	imageOffer5,
+	imageOffer6,
+	imageOffer7,
+	imageOffer8,
+	imageOffer9,
+	imageOffer10
+} from "./images/offers";
+// import image50PercentOff from "./images/specials/50_percent_off.jpg";
 
 class App extends Component {
 	constructor(props) {
@@ -132,7 +142,7 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<a className="anchor" name="top">
+				<a className="anchor" name="top" href="/#top">
 					Top
 				</a>
 
@@ -171,7 +181,7 @@ class App extends Component {
 
 					<Line />
 
-					<a className="anchor" name="specials">
+					{/* <a className="anchor" name="specials" href="/#specials">
 						Angebot
 					</a>
 
@@ -186,9 +196,9 @@ class App extends Component {
 						/>
 					</div>
 
-					<Line />
+					<Line /> */}
 
-					<a className="anchor" name="gallery">
+					<a className="anchor" name="gallery" href="/#gallery">
 						Gallerie
 					</a>
 
@@ -198,7 +208,7 @@ class App extends Component {
 
 					<Line />
 
-					<a className="anchor" name="prices">
+					<a className="anchor" name="prices" href="/#prices">
 						Preise
 					</a>
 
@@ -212,66 +222,62 @@ class App extends Component {
 							bearbeitetes Bild.
 						</p>
 						<ul>
-							<li>ca. 30 Minuten Shooting</li>
-							<li>15 Auswahldateien</li>
-							<li>1 bearbeitetes Bild</li>
+							<li> ca. 30 Minuten Shooting</li>
+							<li>ca. 15 Auswahldateien</li>
+							<li>1 aufwändig bearbeitetes Bild</li>
 						</ul>
 					</Offer>
 
 					<Offer title="KLEINES FANTASYSHOOTING" price="€ 240,-" image={imageOffer2}>
 						<p>
-							Komme in deinem eigenen Outfit zu mir oder suche dir nach Absprache eins in meinem
-							Fundus aus und ich zaubere für dich ein zu dir passendes Make-Up. Anschließend
-							fotografiere ich dich in meinem Home Fotostudio, oder draußen an einer nahe gelegenen
-							Location. Anschließend bekommst du 20 Bilder in digitaler Form und zwei aufwändig
-							bearbeitete Bilder.
+							Komme in deinem eigenen Outfit zu mir oder suche dir eins in meinem Fundus aus und ich
+							zaubere für dich ein zu dir passendes Make-Up. Anschließend fotografiere ich dich in
+							meinem Home Fotostudio, oder draußen an einer nahe gelegenen Location. Anschließend
+							bekommst du 30 Bilder in digitaler Form und zwei aufwändig bearbeitete Bilder.
 						</p>
 						<ul>
+							<li> ca. 45 bis 60 Minuten Make-Up & Styling</li>
 							<li>ca. 1 Stunde Shooting</li>
-							<li>20 Auswahldateien</li>
-							<li>2 bearbeitete Bilder</li>
+							<li>ca. 30 Auswahldateien</li>
+							<li>2 aufwändig bearbeitete Bilder</li>
 						</ul>
 					</Offer>
 
-					<Offer title="GROßES FANTASYSHOOTING" price="€ 300,-" image={imageOffer3}>
+					<Offer title="FANTASYSHOOTING" price="€ 300,-" image={imageOffer3}>
 						<p>
 							Suche dir ein Outfit aus meinem Fundus aus und ich zaubere für dich ein aufwändiges
 							Make-Up. Anschließend fotografiere ich dich in meinem Home Fotostudio in zwei Sets,
-							oder draußen an einer schönen Location. Anschließend bekommst du 30 Bilder in
+							oder draußen an einer schönen Location. Anschließend bekommst du 50 Bilder in
 							digitaler Form und drei aufwändig bearbeitete Bilder.
 						</p>
 						<ul>
-							<li>ca. 1,5 -2 Stunden Shooting</li>
-							<li>30 Auswahldateien</li>
-							<li>3 bearbeitete Bilder</li>
+							<li>ca. 45 bis 60 Minuten Make-Up & Styling</li>
+							<li>ca. 2 Stunden Shooting</li>
+							<li>ca. 50 Auswahldateien</li>
+							<li>3 aufwändig bearbeitete Bilder</li>
 						</ul>
 					</Offer>
 
-					<Offer title="SPEZIALSHOOTING" price="€ 400,-" image={imageOffer4}>
+					<Offer
+						title="GROSSES FANTASYSHOOTING MIT ZWEI OUTFITS"
+						price="€ 400,-"
+						image={imageOffer4}
+					>
 						<p>
-							Lasse dir von mir für dein Shooting ein individuelles Wunschoutfit anfertigen oder
-							suche dir zwei Outfits aus meinem Fundus aus und ich zaubere für dich ein passendes
+							Suche dir zwei Outfits aus meinem Fundus aus und ich zaubere für dich ein passendes
 							aufwändiges Make-Up. Anschließend fotografiere ich dich in meinem Home Fotostudio in
-							zwei Sets, oder draußen an einer schönen Location. Anschließend bekommst du 40 Bilder
-							in digitaler Form und 5 aufwändig bearbeitete Bilder.
+							zwei Sets, oder draußen an einer schönen Location. Anschließend bekommst du 60 Bilder
+							in digitaler Form und 6 aufwändig bearbeitete Bilder.
 						</p>
 						<ul>
-							<li>ca. 2-3 Stunden Shooting</li>
-							<li>40 Auswahldateien</li>
-							<li>5 bearbeitete Bilder</li>
+							<li>ca. 60 Minuten Make-Up & Styling</li>
+							<li>ca. 3 Stunden Shooting</li>
+							<li>ca. 60 Auswahldateien</li>
+							<li>6 aufwändig bearbeitete Bilder</li>
 						</ul>
 					</Offer>
 
-					<Offer title="BILDBEARBEITUNG" price="€ 30,-" image={imageOffer5}>
-						<p>
-							Wenn du weitere Bilder aus unserem gemeinsamen Shooting bearbeiten lassen möchtest,
-							kannst du das für 30€ pro Bild nachträglich bei mir buchen. Oder hast du vielleicht
-							den Wunsch einem privaten Bild von dir Magie zu verleihen? Oder dein Abschlussbild zu
-							verschönern? Dann Schicke mir ein Bild von dir und ich bearbeite es für dich.
-						</p>
-					</Offer>
-
-					<Offer title="BADEWANNENSHOOTING" price="€ 250,-" image={imageOffer6}>
+					<Offer title="BADEWANNENSHOOTING" price="€ 260,-" image={imageOffer5}>
 						<p>
 							Entspanne dich bei einem sinnlichen Bad mit blumigen Düften. Das Badewasser gestalte
 							ich gerne nach deinen Vorstellungen. Wenn du dich mit Dessous wohler fühlst, kannst du
@@ -281,16 +287,156 @@ class App extends Component {
 							bearbeitete Bilder.
 						</p>
 						<ul>
+							<li>ca. 45 Minuten Make-Up & Styling</li>
 							<li>ca. 1 Stunde Shooting</li>
 							<li>Materialien für das Wasser (Farbe, Glitzer, Blüten, Perlen...)</li>
-							<li>20 Auswahldateien</li>
-							<li>2 bearbeitete Bilder</li>
+							<li>ca. 25 Auswahldateien</li>
+							<li>2 aufwändig bearbeitete Bilder</li>
 						</ul>
+					</Offer>
+
+					<Offer title="DESSOUSSHOOTING" price="€ 330,-" image={imageOffer6}>
+						<p>
+							Suche dir Dessous aus meinem Fundus aus und ich zaubere für dich ein sinnliches
+							Make-Up. Anschließend fotografiere ich dich in meinem antiken Sessel und auf dem Bett
+							mit kuschligen Decken und Kissen. Anschließend bekommst du 50 leicht bearbeitete
+							Bilder in Webauflösung in digitaler Form zugeschickt. Von diesen 50 Bildern kannst du
+							dir deine vier Favoriten aussuchen, die ich dir aufwändig bearbeiteten werde und dir
+							in hoher Auflösung zuschicken werde.
+						</p>
+						<ul>
+							<li>ca. 45 bis 60 Minuten Make-Up & Styling</li>
+							<li>ca. 2,5 Stunden Shooting</li>
+							<li>60 leicht bearbeitete Bilder (in Webauflösung)</li>
+							<li>4 aufwändig bearbeitete Bilder in hoher Auflösung</li>
+						</ul>
+					</Offer>
+
+					<Offer title="PÄRCHENSHOOTING" price="€ 240,-" image={imageOffer7}>
+						<p>
+							Kommt zu zweit zu mir und ich mache schöne Fotos von euch. Entweder Outdoor an einer
+							schönen Location oder Indoor in meinem kleinen, aber feinen Fotostudio. Ihr bekommt 50
+							Bilder in digitaler Form und 3 aufwändig bearbeitete Bilder.
+						</p>
+						<ul>
+							<li>ca. 1,5 Stunden Shooting</li>
+							<li>ca. 50 Auswahldateien</li>
+							<li>3 aufwändig bearbeitete Bilder</li>
+						</ul>
+					</Offer>
+
+					<Offer
+						title="FANTASIEVOLLES KINDERSHOOTING"
+						price="€ 220,- (NUR € 110,- PRO WEITERES KIND)"
+						image={imageOffer8}
+					>
+						<p>
+							Komm zu mir und bring deine Tochter oder deinen Sohn mit und ich mache zauberhafte
+							Fotos von ihnen. Entweder Outdoor an einer schönen Location oder Indoor in meinem
+							kleinen, aber feinen Fotostudio. Ihr bekommt 40 Bilder in digitaler Form (+20 weitere
+							pro weiterem Kind) und 3 aufwändig bearbeitete Bilder(+2 weitere pro weiterem Kind).
+						</p>
+						<ul>
+							<li>ca 1,5 Stunden Shooting</li>
+							<li>ca. 40 Auswahldateien</li>
+							<li>3 aufwändig bearbeitete Bilderr</li>
+						</ul>
+					</Offer>
+
+					<Offer title="HOCHZEITSSHOOTINGS" image={imageOffer9}>
+						<Row>
+							<Col xs="10" lg>
+								<strong>Kleines Paket</strong>
+							</Col>
+							<Col md="2">
+								<strong>€ 259,-</strong>
+							</Col>
+						</Row>
+						<ul>
+							<li>2 Stunden</li>
+							<li>
+								ca. 100 leicht bearbeitete Bilder in hoher Auflösung als jpg-Dateien in Farbe &
+								Schwarzweiß
+							</li>
+							<li>
+								2 hochwertig bearbeitete Bilder in print- und web-Auflösung (jede weitere
+								Bearbeitung ab 25,- Aufpreis)
+							</li>
+						</ul>
+						<Row>
+							<Col xs="10" lg>
+								<strong>Mittleres Paket</strong>
+							</Col>
+							<Col md="2">
+								<strong>€ 599,-</strong>
+							</Col>
+						</Row>
+						<ul>
+							<li>4 Stunden</li>
+							<li>
+								ca. 200 leicht bearbeitete Bilder in hoher Auflösung als jpg-Dateien in Farbe &
+								Schwarzweiß
+							</li>
+							<li>
+								3 hochwertig bearbeitete Bilder in print- und web-Auflösung (jede weitere
+								Bearbeitung ab 25,- Aufpreis)
+							</li>
+							<li>gestaltung und Druck eines Fotoalbums mit den besten Bildern</li>
+						</ul>
+						<Row>
+							<Col xs="10" lg>
+								<strong>Großes Paket</strong>
+							</Col>
+							<Col md="2">
+								<strong>€ 1.099,-</strong>
+							</Col>
+						</Row>
+						<ul>
+							<li>8 Stunden Begleitung</li>
+							<li>
+								ca. 450 leicht bearbeitete Bilder in hoher Auflösung als jpg-Dateien in Farbe &
+								Schwarzweiß
+							</li>
+							<li>
+								6 hochwertig bearbeitete Bilder in print- und web-Auflösung (jede weitere
+								Bearbeitung für ab 25,- Aufpreis)
+							</li>
+							<li>gestaltung und Druck eines Fotoalbums mit den besten Bildern</li>
+						</ul>
+						<Row>
+							<Col xs="10" lg>
+								<strong>Premium Paket</strong>
+							</Col>
+							<Col md="2">
+								<strong>€ 1.599,-</strong>
+							</Col>
+						</Row>
+						<ul>
+							<li>12 Stunden Begleitung</li>
+							<li>
+								ca. 800 leicht bearbeitete Bilder in hoher Auflösung als jpg-Dateien in Farbe &
+								Schwarzweiß
+							</li>
+							<li>
+								12 hochwertig bearbeitete Bilder in print- und web-Auflösung (jede weitere
+								Bearbeitung für ab 25,- Aufpreis)
+							</li>
+							<li>gestaltung und Druck eines Fotoalbums mit den besten Bildern</li>
+						</ul>
+					</Offer>
+
+					<Offer title="BILDBEARBEITUNG" price="€ 25,-" image={imageOffer10}>
+						<p>
+							Wenn du weitere Bilder aus unserem gemeinsamen Shooting bearbeiten lassen möchtest,
+							kannst du das ab 25,- pro Bild nachträglich bei mir buchen. Oder hast du vielleicht
+							den Wunsch einem privaten Bild von dir Magie zu verleihen? Oder dein Abschlussbild zu
+							verschönern? Dann Schicke mir ein Bild von dir und ich bearbeite es für dich.
+						</p>
 					</Offer>
 
 					<Line />
 
-					<a className="anchor" name="aboutme">
+					<a className="anchor" name="aboutme" href="/#aboutme">
 						Über Mich
 					</a>
 
@@ -334,7 +480,7 @@ class App extends Component {
 
 					<Line />
 
-					<a className="anchor" name="contact">
+					<a className="anchor" name="contact" href="/#contact">
 						Kontakt
 					</a>
 
@@ -356,7 +502,7 @@ class App extends Component {
 
 					<Line />
 
-					<a className="anchor" name="legal">
+					<a className="anchor" name="legal" href="/#legal">
 						Impressum
 					</a>
 
